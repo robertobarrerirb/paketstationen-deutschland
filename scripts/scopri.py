@@ -10,7 +10,7 @@ cookie e cerchi "Frankfurt" come faresti a mano; lo script registra in backgroun
 le risposte dei server e le salva in debug/scopri_<rete>.json.
 Da quel file si ricava l'interfaccia per scaricare tutti i punti della rete.
 
-    python scripts/scopri.py hermes      # oppure: myflexbox, deinfach, parcelly, novapost, mbe, dhl, ups
+    python scripts/scopri.py hermes      # oppure: myflexbox, deinfach, novapost, mbe, dhl, ups
 
 Poi premi Invio nel terminale quando la mappa mostra i risultati e allega il
 file debug/scopri_<rete>.json nella chat (non contiene i tuoi cookie).
@@ -31,7 +31,6 @@ NETWORKS = {
     "hermes": "https://www.myhermes.de/paketshopfinder/",
     "myflexbox": "https://www.myflexbox.com/",
     "deinfach": "https://www.deinfach.de/",
-    "parcelly": "https://www.parcelly.com/",
     "novapost": "https://novapost.com/de-de/departments",
     "mbe": "https://www.mbe.de/de/store-locator",
     "dhl": "https://www.dhl.de/de/privatkunden/dhl-standorte-finden.html",

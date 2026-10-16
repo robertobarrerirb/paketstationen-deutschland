@@ -21,7 +21,8 @@
  *
  * ## How the series palette was chosen
  *
- * Twelve hues in a fixed order: the eleven of the French version plus a
+ * Twelve hues were validated in a fixed order (Parcelly, the twelfth network, was dropped
+ * in October 2026: its orange is free for the next network): the eleven of the French version plus a
  * raspberry (#b8336a / dark #d0507f), re-ordered by a search over the adjacent
  * pairlist and validated with the dataviz validator (validate_palette.js):
  *
@@ -54,7 +55,6 @@ export const CARRIER_ORDER = [
   'DeinFach',
   'MBE',
   'NovaPost',
-  'Parcelly',
 ] as const;
 
 export type Carrier = (typeof CARRIER_ORDER)[number];
@@ -72,7 +72,6 @@ export const CARRIER_SERIES_COLORS: Record<Carrier, string> = {
   DeinFach: '#8e3fb8', // purple
   MBE: '#b0672a', // brown
   NovaPost: '#0e8f9e', // teal
-  Parcelly: '#eb6834', // orange
 };
 
 /** The same twelve hues stepped for a dark surface — not an automatic flip. */
@@ -88,7 +87,6 @@ export const CARRIER_SERIES_COLORS_DARK: Record<Carrier, string> = {
   DeinFach: '#b46ad6',
   MBE: '#c07a3a',
   NovaPost: '#0f93a6',
-  Parcelly: '#d95926',
 };
 
 /** Display names (brand names: the same in every language). */
@@ -104,7 +102,6 @@ export const CARRIER_LABELS: Record<Carrier, string> = {
   DeinFach: 'DeinFach',
   MBE: 'Mail Boxes Etc.',
   NovaPost: 'Nova Post',
-  Parcelly: 'Parcelly',
 };
 
 /**
@@ -125,7 +122,6 @@ export const CARRIER_SOURCE: Record<Carrier, 'api' | 'osm' | 'pc'> = {
   DeinFach: 'api',
   MBE: 'osm',
   NovaPost: 'osm',
-  Parcelly: 'osm',
 };
 
 interface CarrierBrand {
@@ -158,7 +154,6 @@ export const CARRIER_BRAND: Record<Carrier, CarrierBrand> = {
   DeinFach: { background: '#FFFFFF', borderColor: '#1D1D1B', logoUrl: '', initials: 'DF', textColor: '#1D1D1B' },
   MBE: { background: '#E30613', borderColor: '#1D3C80', logoUrl: '', initials: 'MBE', textColor: '#FFFFFF' },
   NovaPost: { background: '#DA291C', logoUrl: '', initials: 'NP', textColor: '#FFFFFF' },
-  Parcelly: { background: '#00A19A', logoUrl: '', initials: 'P', textColor: '#FFFFFF' },
 };
 /** Series colour for a carrier, falling back to a neutral for unknown names. */
 export function carrierColor(name: string): string {

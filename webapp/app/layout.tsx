@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Paketstationen Deutschland — alle Paketabholstellen auf der Karte",
-  description: "Interaktive Karte der Paketstationen und Paketshops in Deutschland, Gemeinde für Gemeinde: Deutsche Post / DHL, Hermes, DPD, GLS, UPS, Amazon, FedEx, myflexbox, DeinFach, Mail Boxes Etc., Nova Post und Parcelly, mit Abdeckung, Dichte und Verlauf. Auf Deutsch, Italienisch und Englisch.",
+  description: "Interaktive Karte der Paketstationen und Paketshops in Deutschland, Gemeinde für Gemeinde: Deutsche Post / DHL, Hermes, DPD, GLS, UPS, Amazon, FedEx, myflexbox, DeinFach, Mail Boxes Etc. und Nova Post, mit Abdeckung, Dichte und Verlauf. Auf Deutsch, Italienisch und Englisch.",
   openGraph: {
     title: "Paketstationen Deutschland",
     description: "Paketstationen und Paketshops in Deutschland, Gemeinde für Gemeinde, auf einer interaktiven Karte.",

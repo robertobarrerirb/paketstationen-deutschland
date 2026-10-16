@@ -3,7 +3,7 @@ import type { MessageKey } from './de';
 /** Italian UI strings (keys and placeholders as in de.ts). */
 export const it: Record<MessageKey, string> = {
   "about.attribution": "Attribuzione richiesta",
-  "about.attributionText": "Fonti dei dati:\n- DPD, GLS, Hermes, myflexbox, DeinFach, FedEx, Amazon, UPS e Deutsche Post / DHL: dati pubblici dei rispettivi siti\n- Mail Boxes Etc., Nova Post, Parcelly (e ogni rete senza fonte propria): © contributori di OpenStreetMap, ODbL\n- Confini amministrativi e abitanti: © GeoBasis-DE / BKG, VG250-EW (dl-de/by-2-0)\n- Popolazione su griglia di 100 m: censimento 2022, uffici statistici federale e dei Länder (dl-de/by-2-0)\n- Loghi © dei rispettivi titolari",
+  "about.attributionText": "Fonti dei dati:\n- DPD, GLS, Hermes, myflexbox, DeinFach, FedEx, Amazon, UPS e Deutsche Post / DHL: dati pubblici dei rispettivi siti\n- Mail Boxes Etc., Nova Post (e ogni rete senza fonte propria): © contributori di OpenStreetMap, ODbL\n- Confini amministrativi e abitanti: © GeoBasis-DE / BKG, VG250-EW (dl-de/by-2-0)\n- Popolazione su griglia di 100 m: censimento 2022, uffici statistici federale e dei Länder (dl-de/by-2-0)\n- Loghi © dei rispettivi titolari",
   "about.disclaimer": "Esclusione di responsabilità",
   "about.disclaimerText": "Dati e servizio sono forniti \"così come sono\", senza garanzie. Le posizioni provengono da fonti pubbliche e possono essere incomplete, imprecise o non aggiornate: verifica sempre sul sito della rete prima di recarti a un punto. Il progetto non è affiliato a nessuna delle reti. I dati OpenStreetMap dipendono dalla comunità: per le reti che ne derivano i conteggi sono un minimo.",
   "about.f1": "Mappa dei ~10.800 comuni, dei ~400 circondari (Kreise), dei 16 Länder e di tutta la Germania",

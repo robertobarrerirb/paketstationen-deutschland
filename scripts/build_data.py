@@ -76,7 +76,6 @@ CARRIERS = {
     "DeinFach": "deinfach",
     "MBE": "mbe",            # Mail Boxes Etc.
     "NovaPost": "novapost",
-    "Parcelly": "parcelly",
 }
 LOCKER_TYPES = {"locker"}  # mirrors LOCKER_TYPES in webapp/types/pakketpunten.ts
 CATEGORIES = ("locker", "shop")

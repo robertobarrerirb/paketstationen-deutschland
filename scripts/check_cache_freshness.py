@@ -51,7 +51,6 @@ CARRIER_NAMES = {
     "deinfach": "DeinFach",
     "mbe": "MBE",
     "novapost": "NovaPost",
-    "parcelly": "Parcelly",
 }
 
 

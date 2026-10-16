@@ -11,7 +11,7 @@ info:
     - **the area boundary** (© GeoBasis-DE / BKG, VG250, dl-de/by-2-0)
 
     Networks: Deutsche Post / DHL, Hermes, DPD, GLS, UPS, Amazon, FedEx, myflexbox, DeinFach,
-    Mail Boxes Etc., Nova Post, Parcelly. Networks without a direct source (Mail Boxes Etc., Nova Post, Parcelly, for now) come from OpenStreetMap: their
+    Mail Boxes Etc., Nova Post. Networks without a direct source (Mail Boxes Etc., Nova Post, for now) come from OpenStreetMap: their
     counts are a minimum.
 
     Coverage areas (300/400/500 m) are not in the area files: compute them from the points, or
@@ -36,7 +36,7 @@ info:
     | `locatieNaam` | name of the point |
     | `straatNaam`, `straatNr` | street and house number |
     | `cap`, `citta` | postcode and town as given by the network |
-    | `vervoerder` | network: `DHL`, `Hermes`, `DPD`, `GLS`, `UPS`, `Amazon`, `FedEx`, `myflexbox`, `DeinFach`, `MBE`, `NovaPost`, `Parcelly` |
+    | `vervoerder` | network: `DHL`, `Hermes`, `DPD`, `GLS`, `UPS`, `Amazon`, `FedEx`, `myflexbox`, `DeinFach`, `MBE`, `NovaPost` |
     | `puntType` | `locker`, `pickup_point` or `post_office` |
     | `canPickup`, `canDropoff` | collection / drop-off possible |
     | `openingstijden` | hours per day (`mon` … `sun`, `"closed"`), free text or `null` |

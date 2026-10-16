@@ -101,7 +101,7 @@ jobs:
         continue-on-error: true
 
       # Dopo le fonti dirette: OpenStreetMap riempie le reti che non ne hanno
-      # (MBE, Nova Post, Parcelly; Hermes, myflexbox, DeinFach, DHL, Amazon e UPS
+      # (MBE, Nova Post; Hermes, myflexbox, DeinFach, DHL, Amazon e UPS
       # finché non hanno una cache da fonte diretta) e non sovrascrive mai una
       # cache da fonte diretta.
       - name: OpenStreetMap (reti senza fonte diretta)

@@ -22,7 +22,6 @@ const SOURCES: Record<Carrier, { endpoint: string; url: string }> = {
   DeinFach: { endpoint: 'standortfinder.deinfach.de/location-finder-widget.es.js (Standortfinder)', url: 'https://www.deinfach.de' },
   MBE: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://www.mbe.de' },
   NovaPost: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://novapost.com/de-de/' },
-  Parcelly: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://www.parcelly.com' },
 };
 
 const TABS = ['about', 'sources', 'usage', 'links'] as const;

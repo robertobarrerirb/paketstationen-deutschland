@@ -49,7 +49,7 @@ cd webapp && npm install && npm run dev   # port 3002 (Italy 3000, France 3001)
 - **Area kinds** in `municipalities.json`: `country | region | department | commune`, with
   `region(_slug)`, `department(_slug)`, `department_code` (5-digit Kreis key), `code` (AGS).
 - **Networks**: keys `DHL, Hermes, DPD, GLS, UPS, Amazon, FedEx, myflexbox, DeinFach, MBE,
-  NovaPost, Parcelly`. DHL = Deutsche Post / DHL (Packstation, Poststation, Postfiliale, Paketshop):
+  NovaPost`. DHL = Deutsche Post / DHL (Packstation, Poststation, Postfiliale, Paketshop):
   DHL Parcel's keyless API if it answers for DE, else the Location Finder Unified API with
   `DHL_API_KEY`. DPD from `pickup.dpd.cz/api/getAll?country=276`; GLS from api.gls-group.net
   (public header `apikey`, `partnerId` GLS_DE); Hermes from the PaketShop finder's API
@@ -58,21 +58,21 @@ cd webapp && npm install && npm run dev   # port 3002 (Italy 3000, France 3001)
   from `api.myflexbox.de/api/1/lockers` (one call, the list behind myflexbox.com's map). DeinFach
   (merging into myflexbox since October 2026) from the station list embedded in its finder
   widget (`standortfinder.deinfach.de/location-finder-widget.es.js`, `JSON.parse('[...]')` of
-  GeoJSON Features with coordinates as [lat, lon]). MBE, NovaPost and Parcelly come from OpenStreetMap until a
+  GeoJSON Features with coordinates as [lat, lon]). MBE and NovaPost come from OpenStreetMap until a
   direct source is found with `scripts/scopri.py` (records a locator's network calls from a
   visible browser on the user's PC). `fetch_osm.py` assigns an OSM element to every network named
   in brand / operator / post_office:brand and never overwrites a cache whose `metadata.method` is
-  not `osm-overpass`. LPR Logistik was asked for and set aside (no public map). Keep `CARRIERS` in
+  not `osm-overpass`. LPR Logistik and Parcelly were asked for and set aside (no public map of German points; Parcelly now sells PUDO software). Keep `CARRIERS` in
   `scripts/build_data.py`, `NETWORKS`/`STEMS` in `scripts/fetch_osm.py`, `CARRIER_NAMES` in
   `scripts/check_cache_freshness.py`, `CARRIER_ORDER` / `CARRIER_SOURCE` in
   `webapp/lib/carriers.ts` and `SOURCES` in `webapp/components/AboutModal.tsx` in sync. The
-  series palette (12 hues) was validated with the dataviz validator; re-run it if you add one.
+  series palette (11 of 12 validated hues; the 12th, orange, is free) was validated with the dataviz validator; re-run it if you add one.
 - A point used by several networks is listed under each; `scripts/shared_points.py` gives every
   listing of one physical place the same `gruppo` (+ `reti`); the map draws one marker per place.
   Lockers only join lockers; DHL Packstationen / Poststationen and Amazon Lockers never join
   another network's locker unless that listing carries the owner's brand (DeinFach stations
   are Deutsche Post's: they may join the "Packstation 6xx" DHL lists there); open stations
-  (myflexbox, DeinFach, Parcelly) may be listed by several networks. A Postfiliale is a partner
+  (myflexbox, DeinFach) may be listed by several networks. A Postfiliale is a partner
   shop in Germany, so post offices are not kept apart. "Str." / "Straße" are normalised to one
   street word; German addresses put the number last ("Hauptstraße 12a").
   Position of a shared place (`place_positions` in `build_data.py`): where most listings with a

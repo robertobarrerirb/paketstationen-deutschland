@@ -17,7 +17,7 @@ Where a field is missing it cannot contradict: a listing without a name or witho
 house number joins when the rest agrees, but only within NEAR_M metres.
 Lockers only join lockers, and a network's own machines (DHL Packstation / Poststation,
 Amazon Locker) never join another network's lockers, unless that listing carries the
-owner's brand; open stations (myflexbox, DeinFach, Parcelly) may be listed by several
+owner's brand; open stations (myflexbox, DeinFach) may be listed by several
 networks. At most one listing per channel in a group (network_slot), and the manual
 corrections of data/punti_condivisi_correzioni.json.
 German addresses put the number after the street ("Hauptstraße 12a"); "Str." and
@@ -36,7 +36,7 @@ import shapely
 NEAR_M = 80.0
 # A network's own locker machines: a DHL Packstation / Poststation is never another
 # network's locker, nor is an Amazon Locker. Open stations (myflexbox, DeinFach,
-# Parcelly ...) are served by several carriers and may be listed by each of them.
+# ...) are served by several carriers and may be listed by each of them.
 OWN_LOCKER_NETWORKS = {"DHL"}
 # Names another network uses for an owner's machine. DeinFach stations belong to Deutsche
 # Post: DHL lists them as "Packstation 6xx" at the same spot, so they may join DHL's.
@@ -56,7 +56,7 @@ PREFIXES = re.compile(
     r"pickup\s+paketshop|gls\s+paketshop|gls\s+paketstation|ups\s+access\s+point(\s+locker)?|"
     r"fedex(\s+onsite|\s+ship\s+centre)?|amazon\s+(counter|locker|hub)|myflexbox(\s+paketstation)?|"
     r"deinfach(\s+paketstation)?|mail\s+boxes\s+etc\.?|mbe|nova\s*post(\s+filiale|\s+paketautomat)?|"
-    r"parcelly(\s+pickup)?|paketstation|locker)\s*[-\u2013:\u00b7|]?\s*", re.I)
+    r"paketstation|locker)\s*[-\u2013:\u00b7|]?\s*", re.I)
 # Not significant: articles and prepositions, legal forms, the networks' own words
 STOP = {
     "der", "die", "das", "dem", "den", "des", "und", "am", "im", "an", "in", "zum", "zur", "bei", "von", "vom",
@@ -66,7 +66,7 @@ STOP = {
     "dhl", "deutsche", "post", "packstation", "poststation", "postfiliale", "filiale", "paketshop", "paketstation",
     "paket", "pakete", "paketannahme", "annahmestelle", "hermes", "dpd", "pickup", "gls", "ups", "access", "point",
     "fedex", "onsite", "amazon", "counter", "hub", "locker", "lockers", "myflexbox", "flexbox", "deinfach",
-    "mbe", "mail", "boxes", "etc", "nova", "novapost", "parcelly", "shop", "station", "partner", "deutschland",
+    "mbe", "mail", "boxes", "etc", "nova", "novapost", "shop", "station", "partner", "deutschland",
 }
 # Words for the same kind of shop: a "Späti" is a "Kiosk" for another network
 SYNONYMS = {"trinkhalle": "kiosk", "spaeti": "kiosk", "spati": "kiosk", "tabakwaren": "tabak",

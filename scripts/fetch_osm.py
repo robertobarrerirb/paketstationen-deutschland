@@ -5,7 +5,7 @@ that have no direct source yet.
 Germany is mapped very well in OSM: DHL Packstationen and Poststationen
 (amenity=parcel_locker), Postfilialen (amenity=post_office) and the partner shops of
 DHL, Hermes, DPD, GLS, UPS (post_office=post_partner with post_office:brand=*),
-open lockers (myflexbox, DeinFach, Parcelly), Amazon Lockers, Nova Post and
+open lockers (myflexbox, DeinFach), Amazon Lockers, Nova Post and
 Mail Boxes Etc. A point is listed under every network found in its brand,
 operator or post_office:brand.
 
@@ -43,7 +43,7 @@ area["ISO3166-1"="DE"][admin_level=2]->.de;
   nwr["amenity"="post_partner"](area.de);
   nwr["post_office"](area.de);
   nwr["post_office:brand"](area.de);
-  nwr["brand"~"Mail Boxes|Nova Post|Nova Poshta|Parcelly|myflexbox|DeinFach",i](area.de);
+  nwr["brand"~"Mail Boxes|Nova Post|Nova Poshta|myflexbox|DeinFach",i](area.de);
 );
 out center tags;
 """
@@ -62,7 +62,6 @@ NETWORKS = (
     ("DeinFach", re.compile(r"dein\s*fach", re.I)),
     ("MBE", re.compile(r"mail\s*boxes\s*etc|\bmbe\b", re.I)),
     ("NovaPost", re.compile(r"nova\s*post|nova\s*poshta|нова\s*пошта", re.I)),
-    ("Parcelly", re.compile(r"parcelly", re.I)),
 )
 FILIALE = re.compile(r"filiale|postfiliale|post\s*office|postamt", re.I)
 
@@ -89,12 +88,10 @@ DEFAULT_NAMES = {
     ("NovaPost", "pickup_point"): "Nova Post",
     ("NovaPost", "post_office"): "Nova Post",
     ("NovaPost", "locker"): "Nova Post Paketautomat",
-    ("Parcelly", "pickup_point"): "Parcelly",
-    ("Parcelly", "locker"): "Parcelly Station",
 }
 STEMS = {"DHL": "dhl", "Hermes": "hermes", "DPD": "dpd", "GLS": "gls", "UPS": "ups", "Amazon": "amazon",
          "FedEx": "fedex", "myflexbox": "myflexbox", "DeinFach": "deinfach", "MBE": "mbe",
-         "NovaPost": "novapost", "Parcelly": "parcelly"}
+         "NovaPost": "novapost"}
 
 
 def overpass() -> list[dict]:
@@ -180,7 +177,7 @@ def classify(tags: dict) -> list[tuple[str, str]]:
     found = []
     for carrier, pattern in NETWORKS:
         # a locker's or a network shop's name is the network ("Packstation 123", "Mail Boxes Etc.")
-        if not (pattern.search(service) or ((is_locker or carrier in ("MBE", "NovaPost", "Parcelly"))
+        if not (pattern.search(service) or ((is_locker or carrier in ("MBE", "NovaPost"))
                                             and pattern.search(name))):
             continue
         if is_locker:

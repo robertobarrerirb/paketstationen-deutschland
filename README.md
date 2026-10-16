@@ -35,9 +35,8 @@ progetto open source olandese (MIT).
 | **DeinFach** (`DeinFach`: stazioni aperte della Deutsche Post, usate da DHL, UPS e DHL Express) | elenco incluso nel widget Standortfinder di deinfach.de | `fetch_deinfach.py`, un download, su GitHub | 16/10/2026: 1.724 stazioni; da ottobre 2026 confluisce in myflexbox |
 | **Mail Boxes Etc.** (`MBE`) | OpenStreetMap | `fetch_osm.py`; `scopri.py mbe` | minimo |
 | **Nova Post** (`NovaPost`: filiali e Paketautomaten) | OpenStreetMap | `fetch_osm.py`; `scopri.py novapost` | minimo |
-| **Parcelly** (`Parcelly`) | OpenStreetMap | `fetch_osm.py`; `scopri.py parcelly` | minimo |
 
-LPR (LPR Logistik) è escluso per ora: nessuna mappa pubblica dei punti.
+LPR (LPR Logistik) e Parcelly sono esclusi: nessuna mappa pubblica dei punti in Germania (Parcelly oggi vende software per reti di ritiro altrui, non ha una rete propria).
 
 **Hermes**: l'API del PaketShop-Finder restituisce sempre i 20 negozi più vicini a un punto, senza parametri per averne di più: la griglia divide una cella solo quando il ventesimo negozio è ancora più vicino dell'angolo della cella.
 
@@ -49,7 +48,7 @@ queste reti i conteggi sono un minimo.
 **Trovare la fonte di una rete**: dal PC
 
 ```bash
-python scripts/scopri.py <rete>     # hermes, myflexbox, deinfach, parcelly, novapost, mbe, dhl, ups
+python scripts/scopri.py <rete>     # hermes, myflexbox, deinfach, novapost, mbe, dhl, ups
 ```
 
 apre il localizzatore della rete in un browser visibile, registra le chiamate che fa la mappa e le
@@ -59,7 +58,7 @@ salva in `debug/scopri_<rete>.json`: allegando quel file in chat si scrive il fe
 elencato da tre reti. `scripts/shared_points.py` li riconosce come un solo luogo quando hanno
 **indirizzo simile** (stessa via e stesso numero; "Hauptstr." = "Hauptstraße") **e nome simile**. Le
 Packstation DHL e gli Amazon Locker non si uniscono mai ai locker di altre reti; le stazioni aperte
-(myflexbox, DeinFach, Parcelly) sì, perché le usano più corrieri. Una Postfiliale in Germania è un
+(myflexbox, DeinFach) sì, perché le usano più corrieri. Una Postfiliale in Germania è un
 negozio partner, quindi può condividere il luogo con le altre reti. Correzioni manuali in
 `data/punti_condivisi_correzioni.json`.
 
