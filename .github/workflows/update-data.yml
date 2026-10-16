@@ -1,0 +1,159 @@
+name: Aggiorna i punti di ritiro
+
+on:
+  schedule:
+    # Una volta al mese, il 4 alle 02:00 UTC (il 2 gira l'Italia, il 3 la Francia):
+    # repository privato, i minuti gratuiti di GitHub Actions sono 2.000 al mese
+    - cron: '0 2 4 * *'
+  workflow_dispatch:
+    inputs:
+      force_save:
+        description: 'Accetta i nuovi conteggi come riferimento anche se sono calati molto'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+
+    env:
+      CACHE_GUARD_FORCE: ${{ inputs.force_save && '1' || '' }}
+
+    # pipefail: con "| tee" l'esito del passo deve restare quello dello script
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Dipendenze Python
+        run: pip install -r requirements.txt
+
+      # Contorni e abitanti BKG VG250-EW: servono ai fetcher (griglie sulla sagoma
+      # della Germania) e alla pipeline (join spaziale sulle Gemeinden)
+      - name: Dati territoriali (BKG VG250)
+        run: |
+          mkdir -p logs
+          python -u scripts/prepare_territorium.py 2>&1 | tee logs/territorium.log || {
+            tail -50 logs/territorium.log | sed 's/^/::error::/'; exit 1; }
+
+      # Ogni corriere in un passo a sé, con continue-on-error: un corriere che
+      # fallisce (o che il cache guard blocca, exit 2) tiene la cache del mese
+      # prima e non ferma gli altri.
+      - name: DPD Pickup (API DPD)
+        id: fetch_dpd
+        run: python -u scripts/fetch_dpd.py 2>&1 | tee logs/dpd.log
+        timeout-minutes: 10
+        continue-on-error: true
+
+      # API pubblica di DHL Parcel se risponde per la Germania, altrimenti
+      # Location Finder con la chiave gratuita nel secret DHL_API_KEY
+      - name: Deutsche Post / DHL
+        id: fetch_dhl
+        run: python -u scripts/fetch_dhl.py 2>&1 | tee logs/dhl.log
+        env:
+          DHL_API_KEY: ${{ secrets.DHL_API_KEY }}
+        timeout-minutes: 120
+        continue-on-error: true
+
+      - name: GLS (API della mappa gls-group.eu)
+        id: fetch_gls
+        run: python -u scripts/fetch_gls.py 2>&1 | tee logs/gls.log
+        timeout-minutes: 60
+        continue-on-error: true
+
+      # Una chiamata al secondo: la ricerca FedEx blocca l'IP dopo una raffica
+      - name: FedEx
+        id: fetch_fedex
+        run: python -u scripts/fetch_fedex.py 2>&1 | tee logs/fedex.log
+        timeout-minutes: 45
+        continue-on-error: true
+
+      # Dopo le fonti dirette: OpenStreetMap riempie le reti che non ne hanno
+      # (Hermes, myflexbox, DeinFach, MBE, Nova Post, Parcelly; DHL, Amazon e UPS
+      # finché non hanno una cache da fonte diretta) e non sovrascrive mai una
+      # cache da fonte diretta.
+      - name: OpenStreetMap (reti senza fonte diretta)
+        id: fetch_osm
+        run: python -u scripts/fetch_osm.py 2>&1 | tee logs/osm.log
+        timeout-minutes: 40
+        continue-on-error: true
+
+      # Amazon e UPS si aggiornano dal PC (scripts/fetch_amazon.py e
+      # scripts/fetch_ups_pc.py): rifiutano le richieste dai server di GitHub.
+      # Qui si usano le cache già committate.
+
+      - name: Riepilogo anomalie
+        run: |
+          failed=""
+          [ "${{ steps.fetch_dpd.outcome }}" = "failure" ] && failed="${failed}DPD "
+          [ "${{ steps.fetch_dhl.outcome }}" = "failure" ] && failed="${failed}DHL "
+          [ "${{ steps.fetch_gls.outcome }}" = "failure" ] && failed="${failed}GLS "
+          [ "${{ steps.fetch_fedex.outcome }}" = "failure" ] && failed="${failed}FedEx "
+          [ "${{ steps.fetch_osm.outcome }}" = "failure" ] && failed="${failed}OSM "
+          if [ -n "$failed" ]; then
+            echo "::warning::Corrieri non aggiornati: ${failed}— resta la cache precedente"
+            echo "## ⚠️ Corrieri non aggiornati" >> "$GITHUB_STEP_SUMMARY"
+            echo "**${failed}**: si usa la cache del mese precedente." >> "$GITHUB_STEP_SUMMARY"
+            echo "$failed" > /tmp/anomaly_carriers.txt
+          fi
+
+      # Le ultime righe di ogni log come annotazioni: si leggono nel riepilogo
+      # del run (e dall'API) senza scaricare i log completi
+      - name: Riepilogo dei log
+        if: always()
+        run: |
+          for f in logs/*.log; do
+            [ -f "$f" ] || continue
+            tail -6 "$f" | sed "s|^|::notice title=$(basename "$f")::|"
+          done
+
+      - name: Costruisci i dati della webapp
+        run: python scripts/build_data.py
+        timeout-minutes: 45
+
+      # Serve data/popolazione_zensus_100m.csv.gz (workflow "Scarica popolazione"):
+      # finché manca, la pagina di copertura dice che i dati non ci sono ancora
+      - name: Dati per l'analisi di copertura
+        run: |
+          if [ -f data/popolazione_zensus_100m.csv.gz ]; then python scripts/build_copertura.py
+          else echo "::warning::Popolazione del censimento assente: esegui il workflow Scarica popolazione"; fi
+
+      - name: Commit e push
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          # Le cache dei corrieri e lo storico dei conteggi del cache guard,
+          # che va salvato anche quando il guard ha bloccato il salvataggio
+          git add data/*_all_locations.json data/fetch_history.json 2>/dev/null || true
+          git add webapp/public/municipalities.json webapp/public/data
+          # Log dei fetcher: i log di GitHub Actions scadono, questi restano consultabili
+          git add logs 2>/dev/null || true
+          msg="🤖 Aggiornamento punti di ritiro - $(date +'%Y-%m-%d %H:%M UTC')"
+          if [ -f /tmp/anomaly_carriers.txt ]; then
+            msg="${msg} (cache precedente per: $(cat /tmp/anomaly_carriers.txt))"
+          fi
+          git diff --staged --quiet && exit 0
+          git commit -q -m "$msg"
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep $((attempt * 15))
+          done
+          exit 1
+
+      # Ultimo di proposito: un corriere fermo da settimane non deve impedire
+      # la pubblicazione dei dati freschi degli altri.
+      - name: Controllo freschezza delle cache
+        run: python scripts/check_cache_freshness.py --max-age-days 45

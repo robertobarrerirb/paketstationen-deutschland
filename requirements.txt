@@ -1,0 +1,8 @@
+geopandas>=1.1
+shapely>=2.1
+pandas>=2.2
+pyproj>=3.6
+pyogrio>=0.10
+requests>=2.32
+playwright>=1.57
+h3>=4.1

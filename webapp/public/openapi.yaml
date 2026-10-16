@@ -1,0 +1,220 @@
+openapi: 3.0.3
+info:
+  title: Paketstationen Deutschland API
+  version: 1.0.0
+  description: |
+    REST API with the parcel pickup points (Paketstationen, Paketshops, Postfilialen) of
+    Germany, by Gemeinde (municipality), Kreis (district) and Land (state).
+
+    For each area it returns:
+    - **the pickup points** (coordinates, address, network, type, services, opening hours when known)
+    - **the area boundary** (© GeoBasis-DE / BKG, VG250, dl-de/by-2-0)
+
+    Networks: Deutsche Post / DHL, Hermes, DPD, GLS, UPS, Amazon, FedEx, myflexbox, DeinFach,
+    Mail Boxes Etc., Nova Post, Parcelly. Networks without a direct source (Hermes, myflexbox,
+    DeinFach, Mail Boxes Etc., Nova Post, Parcelly, for now) come from OpenStreetMap: their
+    counts are a minimum.
+
+    Coverage areas (300/400/500 m) are not in the area files: compute them from the points, or
+    use the national unions in `/data/geo/coverage_300.geojson`, `coverage_400.geojson` and
+    `coverage_500.geojson`.
+
+    ## Features
+    - No authentication
+    - CORS enabled for every origin
+    - 60 requests per hour per IP address
+    - GeoJSON (RFC 7946)
+    - An area is given by slug, AGS (Gemeinde key), name or Kreis key
+
+    ## Field names
+    Property names (`locatieNaam`, `straatNaam`, `vervoerder`, `puntType` ...) are inherited
+    from the original Dutch project (pakketpunten.nl) and its Italian port, for compatibility;
+    area metadata keeps the French version's `departement*` (= Kreis), `region` (= Land) and
+    `insee` (= AGS) keys.
+
+    | Field | Meaning |
+    | --- | --- |
+    | `locatieNaam` | name of the point |
+    | `straatNaam`, `straatNr` | street and house number |
+    | `cap`, `citta` | postcode and town as given by the network |
+    | `vervoerder` | network: `DHL`, `Hermes`, `DPD`, `GLS`, `UPS`, `Amazon`, `FedEx`, `myflexbox`, `DeinFach`, `MBE`, `NovaPost`, `Parcelly` |
+    | `puntType` | `locker`, `pickup_point` or `post_office` |
+    | `canPickup`, `canDropoff` | collection / drop-off possible |
+    | `openingstijden` | hours per day (`mon` … `sun`, `"closed"`), free text or `null` |
+    | `gruppo`, `reti` | the same physical place listed by several networks: shared id and network list |
+    | `bezettingsgraad` | always 50: no real occupancy data, kept for compatibility |
+
+    ## Updates
+    The data is updated once a month with GitHub Actions.
+
+    ## Disclaimer
+    **The API and the data are provided "as is", without warranty.** The data comes from public
+    sources and may contain errors or be incomplete or out of date. Use at your own risk.
+  license:
+    name: MIT (code) — the data keeps the licences of its sources (OpenStreetMap data is ODbL)
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: /api/v1
+    description: This server
+  - url: http://localhost:3002/api/v1
+    description: Local development
+
+tags:
+  - name: Areas
+    description: Pickup points by Gemeinde, Kreis and Land
+
+paths:
+  /municipalities:
+    get:
+      summary: List of Germany, Länder, Kreise and Gemeinden
+      description: |
+        Every area with slug, AGS, Kreis, Land, population and number of points
+        per network. The full list has ~35,000 communes: use the filters.
+      tags: [Areas]
+      parameters:
+        - name: kind
+          in: query
+          schema:
+            type: string
+            enum: [country, region, department, commune]
+        - name: department
+          in: query
+          description: Département number, e.g. `69`, `2A`
+          schema:
+            type: string
+        - name: region
+          in: query
+          description: Région slug, e.g. `region-bretagne`
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The list of areas
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  total:
+                    type: integer
+                    example: 293
+                  municipalities:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Area'
+        '429':
+          description: Too many requests
+
+  /municipality/{identifier}:
+    get:
+      summary: Pickup points of one Gemeinde, Kreis or Land
+      description: |
+        GeoJSON FeatureCollection with every pickup point of the area and its boundary
+        (a feature with `type: "boundary"`). The identifier can be:
+        - the slug (`frankfurt-am-main`, `neustadt-coburg`, `kreis-landkreis-muenchen`, `land-bayern`)
+        - the AGS of a Gemeinde (`06412000`)
+        - a Kreis key (`06412`)
+        - a name (`Frankfurt am Main`): repeated names answer the most populous Gemeinde
+      tags: [Areas]
+      parameters:
+        - name: identifier
+          in: path
+          required: true
+          schema:
+            type: string
+          example: frankfurt-am-main
+      responses:
+        '200':
+          description: Points and boundary of the area
+          headers:
+            X-Area-Name:
+              description: Name of the area (percent-encoded)
+              schema:
+                type: string
+            X-Area-Slug:
+              schema:
+                type: string
+            X-Area-Kind:
+              schema:
+                type: string
+          content:
+            application/geo+json:
+              schema:
+                $ref: '#/components/schemas/FeatureCollection'
+        '400':
+          description: Missing identifier, or the national file (too large)
+        '404':
+          description: Unknown area
+        '429':
+          description: Too many requests
+
+components:
+  schemas:
+    Area:
+      type: object
+      properties:
+        name: { type: string, example: Frankfurt am Main }
+        slug: { type: string, example: frankfurt-am-main }
+        kind: { type: string, enum: [country, region, department, commune] }
+        region: { type: string, nullable: true, example: Hessen }
+        region_slug: { type: string, nullable: true, example: land-hessen }
+        department: { type: string, nullable: true, example: Frankfurt am Main }
+        department_slug: { type: string, nullable: true, example: kreis-frankfurt-am-main }
+        department_code: { type: string, nullable: true, example: '06412' }
+        population: { type: integer, example: 775790 }
+        code: { type: string, nullable: true, example: '06412000' }
+        total_points: { type: integer, nullable: true }
+        carriers:
+          type: object
+          nullable: true
+          additionalProperties: { type: integer }
+        url: { type: string, example: /api/v1/municipality/frankfurt-am-main }
+    FeatureCollection:
+      type: object
+      properties:
+        type: { type: string, example: FeatureCollection }
+        metadata:
+          type: object
+          properties:
+            gemeente: { type: string, example: Frankfurt am Main }
+            slug: { type: string }
+            generated_at: { type: string, format: date-time }
+            total_points: { type: integer }
+            total_places: { type: integer, description: distinct physical places }
+            providers: { type: array, items: { type: string } }
+            bounds: { type: array, items: { type: number } }
+        features:
+          type: array
+          items:
+            $ref: '#/components/schemas/Feature'
+    Feature:
+      type: object
+      properties:
+        type: { type: string, example: Feature }
+        geometry:
+          type: object
+        properties:
+          type: object
+          properties:
+            type: { type: string, enum: [pakketpunt, boundary] }
+            locatieNaam: { type: string }
+            straatNaam: { type: string }
+            straatNr: { type: string }
+            cap: { type: string }
+            citta: { type: string }
+            vervoerder: { type: string }
+            puntType: { type: string, enum: [locker, pickup_point, post_office] }
+            latitude: { type: number }
+            longitude: { type: number }
+            canPickup: { type: boolean }
+            canDropoff: { type: boolean }
+            openingstijden:
+              nullable: true
+              oneOf:
+                - type: string
+                - type: object
+                  additionalProperties: { type: string }
+            gruppo: { type: string }
+            reti: { type: array, items: { type: string } }
+            bezettingsgraad: { type: integer, example: 50 }

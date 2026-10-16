@@ -1,0 +1,67 @@
+name: Ricostruisci la mappa
+
+# Rigenera i file della webapp dalle cache già committate, senza riscaricare i
+# corrieri (~5 minuti). Utile dopo una correzione manuale delle cache.
+# Con "corriere" riscarica prima un solo corriere (es. dpd, osm).
+on:
+  workflow_dispatch:
+    inputs:
+      corriere:
+        description: 'Riscarica prima solo questo corriere (dhl, dpd, gls, osm, fedex); vuoto = nessuno'
+        type: string
+        default: ''
+      force_save:
+        description: 'Accetta il nuovo conteggio anche se è calato molto'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    env:
+      CACHE_GUARD_FORCE: ${{ inputs.force_save && '1' || '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - run: python scripts/prepare_territorium.py
+      - name: Riscarica un corriere
+        env:
+          DHL_API_KEY: ${{ secrets.DHL_API_KEY }}
+        if: ${{ inputs.corriere != '' }}
+        run: |
+          mkdir -p logs
+          c="${{ inputs.corriere }}"
+          case "$c" in dhl|dpd|gls|osm|fedex) ;; *) echo "corriere sconosciuto: $c"; exit 1;; esac
+          python -u "scripts/fetch_${c}.py" 2>&1 | tee "logs/${c}.log"
+        timeout-minutes: 90
+        continue-on-error: true
+      - name: Riepilogo del log
+        if: ${{ inputs.corriere != '' }}
+        run: tail -12 "logs/${{ inputs.corriere }}.log" | sed "s|^|::notice title=${{ inputs.corriere }}::|" || true
+      - run: python scripts/build_data.py
+      - run: |
+          if [ -f data/popolazione_zensus_100m.csv.gz ]; then python scripts/build_copertura.py; fi
+      - name: Commit e push
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add webapp/public/municipalities.json webapp/public/data
+          for f in data/*_all_locations.json data/fetch_history.json logs/*.log; do if [ -f "$f" ]; then git add -f "$f"; fi; done
+          git diff --staged --quiet && exit 0
+          git commit -q -m "🤖 Mappa ricostruita${{ inputs.corriere && format(' (+ {0})', inputs.corriere) || '' }} - $(date +'%Y-%m-%d %H:%M UTC')"
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep $((attempt * 15))
+          done
+          exit 1

@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+
+# Dati territoriali: rigenerati da scripts/prepare_territorium.py a ogni esecuzione
+data/territorium/*
+!data/territorium/deutschland_outline.geojson
+
+# Registrazioni di scripts/scopri.py e checkpoint dei giri dal PC
+debug/
+data/*_checkpoint.json
+
+# Log e file temporanei
+*.log
+*.tmp
+output/
+
+# Node / Next.js
+webapp/node_modules/
+webapp/.next/
+webapp/out/
+webapp/next-env.d.ts
+
+# Sistema / IDE
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Log dei fetcher (salvati dal workflow)
+!logs/*.log

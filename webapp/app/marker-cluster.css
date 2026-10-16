@@ -1,0 +1,41 @@
+/* Custom styling for Leaflet marker clusters */
+
+/* Override default cluster colors */
+.marker-cluster-small {
+  background-color: rgba(59, 130, 246, 0.6);
+}
+
+.marker-cluster-small div {
+  background-color: rgba(37, 99, 235, 0.8);
+}
+
+.marker-cluster-medium {
+  background-color: rgba(249, 115, 22, 0.6);
+}
+
+.marker-cluster-medium div {
+  background-color: rgba(234, 88, 12, 0.8);
+}
+
+.marker-cluster-large {
+  background-color: rgba(220, 38, 38, 0.6);
+}
+
+.marker-cluster-large div {
+  background-color: rgba(185, 28, 28, 0.8);
+}
+
+/* Make cluster text more readable */
+.marker-cluster div span {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+}
+
+/* Spiderfy leg styling */
+.leaflet-cluster-spider-leg {
+  stroke: #3b82f6;
+  stroke-width: 2;
+  stroke-opacity: 0.6;
+}
