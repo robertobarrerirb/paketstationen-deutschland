@@ -137,7 +137,7 @@ jobs:
           git config user.email "actions@github.com"
           # Le cache dei corrieri e lo storico dei conteggi del cache guard,
           # che va salvato anche quando il guard ha bloccato il salvataggio
-          git add data/*_all_locations.json data/fetch_history.json 2>/dev/null || true
+          git add data/*_all_locations.json data/fetch_history.json data/territorium/deutschland_outline.geojson 2>/dev/null || true
           git add webapp/public/municipalities.json webapp/public/data
           # Log dei fetcher: i log di GitHub Actions scadono, questi restano consultabili
           git add logs 2>/dev/null || true
