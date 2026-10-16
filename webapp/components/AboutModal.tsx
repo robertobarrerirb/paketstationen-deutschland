@@ -19,7 +19,7 @@ const SOURCES: Record<Carrier, { endpoint: string; url: string }> = {
   Amazon: { endpoint: 'www.amazon.de/location_selector/fetch_locations', url: 'https://www.amazon.de' },
   FedEx: { endpoint: 'local.fedex.com/en/search', url: 'https://www.fedex.com/de-de' },
   myflexbox: { endpoint: 'api.myflexbox.de/api/1/lockers', url: 'https://www.myflexbox.com' },
-  DeinFach: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://www.deinfach.de' },
+  DeinFach: { endpoint: 'standortfinder.deinfach.de/location-finder-widget.es.js (Standortfinder)', url: 'https://www.deinfach.de' },
   MBE: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://www.mbe.de' },
   NovaPost: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://novapost.com/de-de/' },
   Parcelly: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://www.parcelly.com' },

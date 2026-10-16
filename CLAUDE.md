@@ -56,7 +56,9 @@ cd webapp && npm install && npm run dev   # port 3002 (Italy 3000, France 3001)
   (`paketshop.myhermes.de/api/v1/parcelshops/search?address=lat,lon`, no key, always the 20
   nearest: `crawl_cells(full=...)` splits a cell only when the 20th is inside its reach); myflexbox
   from `api.myflexbox.de/api/1/lockers` (one call, the list behind myflexbox.com's map). DeinFach
-  (merging into myflexbox since October 2026), MBE, NovaPost and Parcelly come from OpenStreetMap until a
+  (merging into myflexbox since October 2026) from the station list embedded in its finder
+  widget (`standortfinder.deinfach.de/location-finder-widget.es.js`, `JSON.parse('[...]')` of
+  GeoJSON Features with coordinates as [lat, lon]). MBE, NovaPost and Parcelly come from OpenStreetMap until a
   direct source is found with `scripts/scopri.py` (records a locator's network calls from a
   visible browser on the user's PC). `fetch_osm.py` assigns an OSM element to every network named
   in brand / operator / post_office:brand and never overwrites a cache whose `metadata.method` is

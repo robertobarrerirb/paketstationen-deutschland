@@ -122,7 +122,7 @@ export const CARRIER_SOURCE: Record<Carrier, 'api' | 'osm' | 'pc'> = {
   Amazon: 'pc',
   FedEx: 'api',
   myflexbox: 'api',
-  DeinFach: 'osm',
+  DeinFach: 'api',
   MBE: 'osm',
   NovaPost: 'osm',
   Parcelly: 'osm',
