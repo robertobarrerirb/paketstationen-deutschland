@@ -70,7 +70,8 @@ cd webapp && npm install && npm run dev   # port 3002 (Italy 3000, France 3001)
 - A point used by several networks is listed under each; `scripts/shared_points.py` gives every
   listing of one physical place the same `gruppo` (+ `reti`); the map draws one marker per place.
   Lockers only join lockers; DHL Packstationen / Poststationen and Amazon Lockers never join
-  another network's locker unless that listing carries the owner's brand; open stations
+  another network's locker unless that listing carries the owner's brand (DeinFach stations
+  are Deutsche Post's: they may join the "Packstation 6xx" DHL lists there); open stations
   (myflexbox, DeinFach, Parcelly) may be listed by several networks. A Postfiliale is a partner
   shop in Germany, so post offices are not kept apart. "Str." / "Straße" are normalised to one
   street word; German addresses put the number last ("Hauptstraße 12a").

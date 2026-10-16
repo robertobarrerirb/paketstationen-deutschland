@@ -38,8 +38,9 @@ NEAR_M = 80.0
 # network's locker, nor is an Amazon Locker. Open stations (myflexbox, DeinFach,
 # Parcelly ...) are served by several carriers and may be listed by each of them.
 OWN_LOCKER_NETWORKS = {"DHL"}
-# Name another network uses for an owner's machine
-OWN_LOCKER_BRANDS = {"DHL": "packstation", "Amazon": "amazon"}
+# Names another network uses for an owner's machine. DeinFach stations belong to Deutsche
+# Post: DHL lists them as "Packstation 6xx" at the same spot, so they may join DHL's.
+OWN_LOCKER_BRANDS = {"DHL": ("packstation", "deinfach"), "Amazon": ("amazon",)}
 ADDRESS_M = 200.0
 # Same street and name, different house number: still one shop when this close
 SAME_SPOT_M = 30.0
@@ -238,9 +239,9 @@ def shared_groups(x, y, carriers, is_locker, names, streets, numbers, keys=None,
         if owner[a] and owner[b]:
             return False
         if owner[a]:
-            return owner[a] in lower[b]
+            return any(brand in lower[b] for brand in owner[a])
         if owner[b]:
-            return owner[b] in lower[a]
+            return any(brand in lower[a] for brand in owner[b])
         return True
 
     keep &= np.array([allowed(a, b) for a, b in zip(i, j)], dtype=bool) if len(i) else keep
