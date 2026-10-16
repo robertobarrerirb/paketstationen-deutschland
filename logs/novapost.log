@@ -1,0 +1,12 @@
+📡 Nova Post (API della pagina Filialen di novapost.com, 100 per pagina)
+   11538 punti in 116 pagine
+   categorie: {'PostBranch': 43, 'PUDO': 11494, 'Postomat': 1} · fonti: {'NPAX': 45, 'DPD': 11492, 'MyFlexBox': 1}
+
+📦 NovaPost: 11538 points
+   pickup_point      11494
+   post_office          43
+   locker                1
+  ℹ️  NovaPost: 76820.0% increase (15 → 11538)
+💾 Saved to: /home/runner/work/paketstationen-deutschland/paketstationen-deutschland/data/novapost_all_locations.json
+   File size: 4751.5 KB
+   Locations: 11538
