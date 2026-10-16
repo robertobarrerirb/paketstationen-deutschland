@@ -54,8 +54,9 @@ cd webapp && npm install && npm run dev   # port 3002 (Italy 3000, France 3001)
   `DHL_API_KEY`. DPD from `pickup.dpd.cz/api/getAll?country=276`; GLS from api.gls-group.net
   (public header `apikey`, `partnerId` GLS_DE); Hermes from the PaketShop finder's API
   (`paketshop.myhermes.de/api/v1/parcelshops/search?address=lat,lon`, no key, always the 20
-  nearest: `crawl_cells(full=...)` splits a cell only when the 20th is inside its reach). myflexbox, DeinFach (merging into
-  myflexbox since October 2026), MBE, NovaPost and Parcelly come from OpenStreetMap until a
+  nearest: `crawl_cells(full=...)` splits a cell only when the 20th is inside its reach); myflexbox
+  from `api.myflexbox.de/api/1/lockers` (one call, the list behind myflexbox.com's map). DeinFach
+  (merging into myflexbox since October 2026), MBE, NovaPost and Parcelly come from OpenStreetMap until a
   direct source is found with `scripts/scopri.py` (records a locator's network calls from a
   visible browser on the user's PC). `fetch_osm.py` assigns an OSM element to every network named
   in brand / operator / post_office:brand and never overwrites a cache whose `metadata.method` is

@@ -31,7 +31,7 @@ progetto open source olandese (MIT).
 | **UPS** (`UPS`: Access Point) | localizzatore di ups.com, da un browser visibile | dal PC: `fetch_ups_pc.py` | da fare dal PC |
 | **Amazon** (`Amazon`: Locker e Counter) | `amazon.de/location_selector/fetch_locations` | dal PC: `fetch_amazon.py` (cookie di Firefox su amazon.de) | da fare dal PC |
 | **FedEx** (`FedEx`) | `local.fedex.com/en/search` | ricerca pubblica, griglia di cerchi | come in Italia e Francia |
-| **myflexbox** (`myflexbox`: stazioni aperte a tutti i corrieri) | OpenStreetMap | `fetch_osm.py`; `scopri.py myflexbox` | minimo |
+| **myflexbox** (`myflexbox`: stazioni aperte a tutti i corrieri) | `api.myflexbox.de/api/1/lockers` (lista della mappa di myflexbox.com) | `fetch_myflexbox.py`, una chiamata, su GitHub | 16/10/2026: 2.063 stazioni |
 | **DeinFach** (`DeinFach`: stazioni aperte della Deutsche Post) | OpenStreetMap | `fetch_osm.py`; `scopri.py deinfach` | minimo; da ottobre 2026 confluisce in myflexbox |
 | **Mail Boxes Etc.** (`MBE`) | OpenStreetMap | `fetch_osm.py`; `scopri.py mbe` | minimo |
 | **Nova Post** (`NovaPost`: filiali e Paketautomaten) | OpenStreetMap | `fetch_osm.py`; `scopri.py novapost` | minimo |
@@ -105,6 +105,7 @@ python scripts/fetch_dpd.py                    # DPD Pickup: ~1 min
 python scripts/fetch_dhl.py                    # Deutsche Post / DHL (DHL_API_KEY facoltativa)
 python scripts/fetch_gls.py                    # GLS
 python scripts/fetch_hermes.py                 # Hermes PaketShop
+python scripts/fetch_myflexbox.py              # myflexbox
 python scripts/fetch_fedex.py                  # FedEx: ~20 min
 python scripts/fetch_osm.py                    # OpenStreetMap: le reti senza fonte diretta
 python scripts/fetch_ups_pc.py                 # UPS Access Point, dal PC (browser visibile)
@@ -157,6 +158,7 @@ paketstationen-deutschland/
 │   ├── fetch_dhl.py             # Deutsche Post / DHL
 │   ├── fetch_gls.py             # GLS (API della mappa)
 │   ├── fetch_hermes.py          # Hermes (API del PaketShop-Finder)
+│   ├── fetch_myflexbox.py       # myflexbox (lista della mappa)
 │   ├── fetch_fedex.py           # FedEx
 │   ├── fetch_osm.py             # OpenStreetMap, per le reti senza fonte diretta
 │   ├── fetch_ups_pc.py          # UPS dal PC

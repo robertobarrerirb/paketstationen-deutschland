@@ -5,7 +5,7 @@
  */
 export const de = {
   "about.attribution": "Pflichtangaben zur Herkunft",
-  "about.attributionText": "Datenquellen:\n- DPD, GLS, Hermes, FedEx, Amazon, UPS und Deutsche Post / DHL: öffentliche Daten der jeweiligen Websites\n- myflexbox, DeinFach, Mail Boxes Etc., Nova Post, Parcelly (und jedes Netz ohne eigene Quelle): © OpenStreetMap-Mitwirkende, ODbL\n- Verwaltungsgrenzen und Einwohnerzahlen: © GeoBasis-DE / BKG, VG250-EW (dl-de/by-2-0)\n- Bevölkerung im 100-m-Raster: Zensus 2022, Statistische Ämter des Bundes und der Länder (dl-de/by-2-0)\n- Logos © der jeweiligen Inhaber",
+  "about.attributionText": "Datenquellen:\n- DPD, GLS, Hermes, myflexbox, FedEx, Amazon, UPS und Deutsche Post / DHL: öffentliche Daten der jeweiligen Websites\n- DeinFach, Mail Boxes Etc., Nova Post, Parcelly (und jedes Netz ohne eigene Quelle): © OpenStreetMap-Mitwirkende, ODbL\n- Verwaltungsgrenzen und Einwohnerzahlen: © GeoBasis-DE / BKG, VG250-EW (dl-de/by-2-0)\n- Bevölkerung im 100-m-Raster: Zensus 2022, Statistische Ämter des Bundes und der Länder (dl-de/by-2-0)\n- Logos © der jeweiligen Inhaber",
   "about.disclaimer": "Haftungsausschluss",
   "about.disclaimerText": "Daten und Dienst werden ohne Gewähr bereitgestellt. Die Standorte stammen aus öffentlichen Quellen und können unvollständig, ungenau oder veraltet sein: Prüfe vor dem Weg zu einem Punkt immer die Website des Netzes. Das Projekt ist mit keinem der Netze verbunden. OpenStreetMap-Daten hängen von der Community ab: Bei den Netzen, die daher stammen, sind die Zahlen ein Mindestwert.",
   "about.f1": "Karte der ~10.800 Gemeinden, der ~400 Kreise, der 16 Länder und ganz Deutschlands",

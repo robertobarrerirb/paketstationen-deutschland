@@ -18,7 +18,7 @@ const SOURCES: Record<Carrier, { endpoint: string; url: string }> = {
   UPS: { endpoint: 'widgets.ups.com/api/ups.app/xml/Locator', url: 'https://www.ups.com/de' },
   Amazon: { endpoint: 'www.amazon.de/location_selector/fetch_locations', url: 'https://www.amazon.de' },
   FedEx: { endpoint: 'local.fedex.com/en/search', url: 'https://www.fedex.com/de-de' },
-  myflexbox: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://www.myflexbox.com' },
+  myflexbox: { endpoint: 'api.myflexbox.de/api/1/lockers', url: 'https://www.myflexbox.com' },
   DeinFach: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://www.deinfach.de' },
   MBE: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://www.mbe.de' },
   NovaPost: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://novapost.com/de-de/' },
