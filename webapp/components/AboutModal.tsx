@@ -21,7 +21,7 @@ const SOURCES: Record<Carrier, { endpoint: string; url: string }> = {
   myflexbox: { endpoint: 'api.myflexbox.de/api/1/lockers', url: 'https://www.myflexbox.com' },
   DeinFach: { endpoint: 'standortfinder.deinfach.de/location-finder-widget.es.js (Standortfinder)', url: 'https://www.deinfach.de' },
   MBE: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://www.mbe.de' },
-  NovaPost: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://novapost.com/de-de/' },
+  NovaPost: { endpoint: 'api.novapost.com/site/v.1.0/divisions?countryCodes[]=DE', url: 'https://novapost.com/de-de/' },
 };
 
 const TABS = ['about', 'sources', 'usage', 'links'] as const;
@@ -123,7 +123,7 @@ export default function AboutModal({ isOpen, onClose }: AboutModalProps) {
                     name={CARRIER_LABELS[carrier]}
                     endpoint={SOURCES[carrier].endpoint}
                     type={t(`about.src.${CARRIER_SOURCE[carrier]}`)}
-                    note={['DHL', 'DeinFach'].includes(carrier) ? t(`about.note.${carrier}`) : undefined}
+                    note={['DHL', 'DeinFach', 'NovaPost'].includes(carrier) ? t(`about.note.${carrier}`) : undefined}
                     url={SOURCES[carrier].url}
                     color={CARRIER_BRAND[carrier].background}
                   />

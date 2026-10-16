@@ -121,7 +121,7 @@ export const CARRIER_SOURCE: Record<Carrier, 'api' | 'osm' | 'pc'> = {
   myflexbox: 'api',
   DeinFach: 'api',
   MBE: 'osm',
-  NovaPost: 'osm',
+  NovaPost: 'api',
 };
 
 interface CarrierBrand {

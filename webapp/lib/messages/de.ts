@@ -5,7 +5,7 @@
  */
 export const de = {
   "about.attribution": "Pflichtangaben zur Herkunft",
-  "about.attributionText": "Datenquellen:\n- DPD, GLS, Hermes, myflexbox, DeinFach, FedEx, Amazon, UPS und Deutsche Post / DHL: öffentliche Daten der jeweiligen Websites\n- Mail Boxes Etc., Nova Post (und jedes Netz ohne eigene Quelle): © OpenStreetMap-Mitwirkende, ODbL\n- Verwaltungsgrenzen und Einwohnerzahlen: © GeoBasis-DE / BKG, VG250-EW (dl-de/by-2-0)\n- Bevölkerung im 100-m-Raster: Zensus 2022, Statistische Ämter des Bundes und der Länder (dl-de/by-2-0)\n- Logos © der jeweiligen Inhaber",
+  "about.attributionText": "Datenquellen:\n- DPD, GLS, Hermes, myflexbox, DeinFach, Nova Post, FedEx, Amazon, UPS und Deutsche Post / DHL: öffentliche Daten der jeweiligen Websites\n- Mail Boxes Etc. (und jedes Netz ohne eigene Quelle): © OpenStreetMap-Mitwirkende, ODbL\n- Verwaltungsgrenzen und Einwohnerzahlen: © GeoBasis-DE / BKG, VG250-EW (dl-de/by-2-0)\n- Bevölkerung im 100-m-Raster: Zensus 2022, Statistische Ämter des Bundes und der Länder (dl-de/by-2-0)\n- Logos © der jeweiligen Inhaber",
   "about.disclaimer": "Haftungsausschluss",
   "about.disclaimerText": "Daten und Dienst werden ohne Gewähr bereitgestellt. Die Standorte stammen aus öffentlichen Quellen und können unvollständig, ungenau oder veraltet sein: Prüfe vor dem Weg zu einem Punkt immer die Website des Netzes. Das Projekt ist mit keinem der Netze verbunden. OpenStreetMap-Daten hängen von der Community ab: Bei den Netzen, die daher stammen, sind die Zahlen ein Mindestwert.",
   "about.f1": "Karte der ~10.800 Gemeinden, der ~400 Kreise, der 16 Länder und ganz Deutschlands",
@@ -30,6 +30,7 @@ export const de = {
   "about.more3": "Adresssuche: Photon (komoot), auf Daten von OpenStreetMap",
   "about.more4": "Hintergrundkarten: © OpenStreetMap-Mitwirkende, CARTO, Esri",
   "about.note.DHL": "Packstationen und Poststationen, Postfilialen und DHL Paketshops.",
+  "about.note.NovaPost": "Eigene Filialen und die DPD-Pickup-Paketshops, die Nova Post nutzt.",
   "about.note.DeinFach": "Anbieteroffene Paketstationen der Deutschen Post; die Marke geht seit Oktober 2026 schrittweise in myflexbox auf.",
   "about.origin": "Herkunft",
   "about.originLink": "Ursprüngliches Projekt auf GitHub ↗",

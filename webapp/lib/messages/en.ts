@@ -3,7 +3,7 @@ import type { MessageKey } from './de';
 /** English UI strings (keys and placeholders as in de.ts). */
 export const en: Record<MessageKey, string> = {
   "about.attribution": "Required attribution",
-  "about.attributionText": "Data sources:\n- DPD, GLS, Hermes, myflexbox, DeinFach, FedEx, Amazon, UPS and Deutsche Post / DHL: public data from their websites\n- Mail Boxes Etc., Nova Post (and any network without its own source): © OpenStreetMap contributors, ODbL\n- Administrative boundaries and population: © GeoBasis-DE / BKG, VG250-EW (dl-de/by-2-0)\n- Population on a 100 m grid: Census 2022, Federal and State Statistical Offices (dl-de/by-2-0)\n- Logos © their owners",
+  "about.attributionText": "Data sources:\n- DPD, GLS, Hermes, myflexbox, DeinFach, Nova Post, FedEx, Amazon, UPS and Deutsche Post / DHL: public data from their websites\n- Mail Boxes Etc. (and any network without its own source): © OpenStreetMap contributors, ODbL\n- Administrative boundaries and population: © GeoBasis-DE / BKG, VG250-EW (dl-de/by-2-0)\n- Population on a 100 m grid: Census 2022, Federal and State Statistical Offices (dl-de/by-2-0)\n- Logos © their owners",
   "about.disclaimer": "Disclaimer",
   "about.disclaimerText": "Data and service are provided \"as is\", without warranty. Locations come from public sources and may be incomplete, inaccurate or out of date: always check the network’s website before going to a point. The project is not affiliated with any network. OpenStreetMap data depends on its community: for the networks taken from it, counts are a minimum.",
   "about.f1": "Map of the ~10,800 municipalities, ~400 districts, 16 states and the whole of Germany",
@@ -28,6 +28,7 @@ export const en: Record<MessageKey, string> = {
   "about.more3": "Address search: Photon (komoot), on OpenStreetMap data",
   "about.more4": "Basemaps: © OpenStreetMap contributors, CARTO, Esri",
   "about.note.DHL": "Packstationen and Poststationen (lockers), post offices (Postfilialen) and DHL Paketshops.",
+  "about.note.NovaPost": "Its own branches and the DPD Pickup shops Nova Post uses.",
   "about.note.DeinFach": "Deutsche Post’s open parcel lockers; since October 2026 the brand is being merged into myflexbox.",
   "about.origin": "Origin",
   "about.originLink": "Original project on GitHub ↗",

@@ -11,7 +11,7 @@ info:
     - **the area boundary** (© GeoBasis-DE / BKG, VG250, dl-de/by-2-0)
 
     Networks: Deutsche Post / DHL, Hermes, DPD, GLS, UPS, Amazon, FedEx, myflexbox, DeinFach,
-    Mail Boxes Etc., Nova Post. Networks without a direct source (Mail Boxes Etc., Nova Post, for now) come from OpenStreetMap: their
+    Mail Boxes Etc., Nova Post. Networks without a direct source (Mail Boxes Etc., for now) come from OpenStreetMap: their
     counts are a minimum.
 
     Coverage areas (300/400/500 m) are not in the area files: compute them from the points, or

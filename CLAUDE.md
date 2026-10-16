@@ -58,7 +58,10 @@ cd webapp && npm install && npm run dev   # port 3002 (Italy 3000, France 3001)
   from `api.myflexbox.de/api/1/lockers` (one call, the list behind myflexbox.com's map). DeinFach
   (merging into myflexbox since October 2026) from the station list embedded in its finder
   widget (`standortfinder.deinfach.de/location-finder-widget.es.js`, `JSON.parse('[...]')` of
-  GeoJSON Features with coordinates as [lat, lon]). MBE and NovaPost come from OpenStreetMap until a
+  GeoJSON Features with coordinates as [lat, lon]). NovaPost from
+  `api.novapost.com/site/v.1.0/divisions?countryCodes[]=DE` (100 per page): ~40 own branches and
+  ~11,500 PUDO points that are DPD Pickup shops, named "Nova Post PUDO" so they join the DPD shop
+  by address. MBE comes from OpenStreetMap until a
   direct source is found with `scripts/scopri.py` (records a locator's network calls from a
   visible browser on the user's PC). `fetch_osm.py` assigns an OSM element to every network named
   in brand / operator / post_office:brand and never overwrites a cache whose `metadata.method` is

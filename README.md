@@ -34,7 +34,7 @@ progetto open source olandese (MIT).
 | **myflexbox** (`myflexbox`: stazioni aperte a tutti i corrieri) | `api.myflexbox.de/api/1/lockers` (lista della mappa di myflexbox.com) | `fetch_myflexbox.py`, una chiamata, su GitHub | 16/10/2026: 2.063 stazioni |
 | **DeinFach** (`DeinFach`: stazioni aperte della Deutsche Post, usate da DHL, UPS e DHL Express) | elenco incluso nel widget Standortfinder di deinfach.de | `fetch_deinfach.py`, un download, su GitHub | 16/10/2026: 1.724 stazioni; da ottobre 2026 confluisce in myflexbox |
 | **Mail Boxes Etc.** (`MBE`) | OpenStreetMap | `fetch_osm.py`; `scopri.py mbe` | minimo |
-| **Nova Post** (`NovaPost`: filiali e Paketautomaten) | OpenStreetMap | `fetch_osm.py`; `scopri.py novapost` | minimo |
+| **Nova Post** (`NovaPost`: filiali proprie e i Paketshop DPD Pickup che usa) | `api.novapost.com/site/v.1.0/divisions?countryCodes[]=DE` (API della pagina Filialen) | `fetch_novapost.py`, 100 per pagina, su GitHub | 16/10/2026: ~11.500 punti, quasi tutti DPD Pickup |
 
 LPR (LPR Logistik) e Parcelly sono esclusi: nessuna mappa pubblica dei punti in Germania (Parcelly oggi vende software per reti di ritiro altrui, non ha una rete propria).
 
@@ -106,6 +106,7 @@ python scripts/fetch_gls.py                    # GLS
 python scripts/fetch_hermes.py                 # Hermes PaketShop
 python scripts/fetch_myflexbox.py              # myflexbox
 python scripts/fetch_deinfach.py               # DeinFach
+python scripts/fetch_novapost.py               # Nova Post
 python scripts/fetch_fedex.py                  # FedEx: ~20 min
 python scripts/fetch_osm.py                    # OpenStreetMap: le reti senza fonte diretta
 python scripts/fetch_ups_pc.py                 # UPS Access Point, dal PC (browser visibile)
@@ -160,6 +161,7 @@ paketstationen-deutschland/
 │   ├── fetch_hermes.py          # Hermes (API del PaketShop-Finder)
 │   ├── fetch_myflexbox.py       # myflexbox (lista della mappa)
 │   ├── fetch_deinfach.py        # DeinFach (elenco nel widget)
+│   ├── fetch_novapost.py        # Nova Post (API della pagina Filialen)
 │   ├── fetch_fedex.py           # FedEx
 │   ├── fetch_osm.py             # OpenStreetMap, per le reti senza fonte diretta
 │   ├── fetch_ups_pc.py          # UPS dal PC

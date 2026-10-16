@@ -93,6 +93,12 @@ jobs:
         timeout-minutes: 10
         continue-on-error: true
 
+      - name: Nova Post (API della pagina Filialen)
+        id: fetch_novapost
+        run: python -u scripts/fetch_novapost.py 2>&1 | tee logs/novapost.log
+        timeout-minutes: 20
+        continue-on-error: true
+
       # Una chiamata al secondo: la ricerca FedEx blocca l'IP dopo una raffica
       - name: FedEx
         id: fetch_fedex
@@ -101,7 +107,7 @@ jobs:
         continue-on-error: true
 
       # Dopo le fonti dirette: OpenStreetMap riempie le reti che non ne hanno
-      # (MBE, Nova Post; Hermes, myflexbox, DeinFach, DHL, Amazon e UPS
+      # (MBE; Nova Post, Hermes, myflexbox, DeinFach, DHL, Amazon e UPS
       # finché non hanno una cache da fonte diretta) e non sovrascrive mai una
       # cache da fonte diretta.
       - name: OpenStreetMap (reti senza fonte diretta)
@@ -123,6 +129,7 @@ jobs:
           [ "${{ steps.fetch_hermes.outcome }}" = "failure" ] && failed="${failed}Hermes "
           [ "${{ steps.fetch_myflexbox.outcome }}" = "failure" ] && failed="${failed}myflexbox "
           [ "${{ steps.fetch_deinfach.outcome }}" = "failure" ] && failed="${failed}DeinFach "
+          [ "${{ steps.fetch_novapost.outcome }}" = "failure" ] && failed="${failed}NovaPost "
           [ "${{ steps.fetch_fedex.outcome }}" = "failure" ] && failed="${failed}FedEx "
           [ "${{ steps.fetch_osm.outcome }}" = "failure" ] && failed="${failed}OSM "
           if [ -n "$failed" ]; then

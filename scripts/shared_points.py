@@ -66,7 +66,7 @@ STOP = {
     "dhl", "deutsche", "post", "packstation", "poststation", "postfiliale", "filiale", "paketshop", "paketstation",
     "paket", "pakete", "paketannahme", "annahmestelle", "hermes", "dpd", "pickup", "gls", "ups", "access", "point",
     "fedex", "onsite", "amazon", "counter", "hub", "locker", "lockers", "myflexbox", "flexbox", "deinfach",
-    "mbe", "mail", "boxes", "etc", "nova", "novapost", "shop", "station", "partner", "deutschland",
+    "mbe", "mail", "boxes", "etc", "nova", "novapost", "pudo", "shop", "station", "partner", "deutschland",
 }
 # Words for the same kind of shop: a "Späti" is a "Kiosk" for another network
 SYNONYMS = {"trinkhalle": "kiosk", "spaeti": "kiosk", "spati": "kiosk", "tabakwaren": "tabak",
