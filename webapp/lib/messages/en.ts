@@ -3,7 +3,7 @@ import type { MessageKey } from './de';
 /** English UI strings (keys and placeholders as in de.ts). */
 export const en: Record<MessageKey, string> = {
   "about.attribution": "Required attribution",
-  "about.attributionText": "Data sources:\n- DPD, GLS, FedEx, Amazon, UPS and Deutsche Post / DHL: public data from their websites\n- Hermes, myflexbox, DeinFach, Mail Boxes Etc., Nova Post, Parcelly (and any network without its own source): © OpenStreetMap contributors, ODbL\n- Administrative boundaries and population: © GeoBasis-DE / BKG, VG250-EW (dl-de/by-2-0)\n- Population on a 100 m grid: Census 2022, Federal and State Statistical Offices (dl-de/by-2-0)\n- Logos © their owners",
+  "about.attributionText": "Data sources:\n- DPD, GLS, Hermes, FedEx, Amazon, UPS and Deutsche Post / DHL: public data from their websites\n- myflexbox, DeinFach, Mail Boxes Etc., Nova Post, Parcelly (and any network without its own source): © OpenStreetMap contributors, ODbL\n- Administrative boundaries and population: © GeoBasis-DE / BKG, VG250-EW (dl-de/by-2-0)\n- Population on a 100 m grid: Census 2022, Federal and State Statistical Offices (dl-de/by-2-0)\n- Logos © their owners",
   "about.disclaimer": "Disclaimer",
   "about.disclaimerText": "Data and service are provided \"as is\", without warranty. Locations come from public sources and may be incomplete, inaccurate or out of date: always check the network’s website before going to a point. The project is not affiliated with any network. OpenStreetMap data depends on its community: for the networks taken from it, counts are a minimum.",
   "about.f1": "Map of the ~10,800 municipalities, ~400 districts, 16 states and the whole of Germany",

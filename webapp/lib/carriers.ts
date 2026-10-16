@@ -115,7 +115,7 @@ export const CARRIER_LABELS: Record<Carrier, string> = {
  */
 export const CARRIER_SOURCE: Record<Carrier, 'api' | 'osm' | 'pc'> = {
   DHL: 'api',
-  Hermes: 'osm',
+  Hermes: 'api',
   DPD: 'api',
   GLS: 'api',
   UPS: 'pc',

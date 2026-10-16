@@ -25,7 +25,7 @@ progetto open source olandese (MIT).
 | Rete (chiave) | Fonte | Metodo | Stato |
 |---|---|---|---|
 | **Deutsche Post / DHL** (`DHL`: Packstation, Poststation, Postfiliale, DHL Paketshop) | `api-gw.dhlparcel.nl/parcel-shop-locations/DE/by-geo` se risponde per la Germania, altrimenti DHL Location Finder Unified API (chiave gratuita, secret `DHL_API_KEY`) | griglia adattiva, su GitHub; riserva OpenStreetMap | da verificare al primo giro |
-| **Hermes** (`Hermes`: PaketShop e Paketstation) | OpenStreetMap | `fetch_osm.py`; fonte diretta da trovare con `scopri.py hermes` | minimo |
+| **Hermes** (`Hermes`: PaketShop e Paketstation) | `paketshop.myhermes.de/api/v1/parcelshops/search` (API del PaketShop-Finder, 20 punti per ricerca) | `fetch_hermes.py`, griglia adattiva, su GitHub | trovata con `scopri.py hermes` il 16/10/2026 |
 | **DPD** (`DPD`: Pickup Paketshop e Pickup Station) | `pickup.dpd.cz/api/getAll?country=276` | API pubblica DPD, una chiamata (in Francia: 24.563 punti) | da verificare al primo giro |
 | **GLS** (`GLS`: PaketShop, Paketstation) | `api.gls-group.net/…-pse-bulk` (API della mappa gls-group.eu, `partnerId` `GLS_DE`) | API, griglia adattiva, su GitHub | da verificare al primo giro |
 | **UPS** (`UPS`: Access Point) | localizzatore di ups.com, da un browser visibile | dal PC: `fetch_ups_pc.py` | da fare dal PC |
@@ -38,6 +38,8 @@ progetto open source olandese (MIT).
 | **Parcelly** (`Parcelly`) | OpenStreetMap | `fetch_osm.py`; `scopri.py parcelly` | minimo |
 
 LPR (LPR Logistik) è escluso per ora: nessuna mappa pubblica dei punti.
+
+**Hermes**: l'API del PaketShop-Finder restituisce sempre i 20 negozi più vicini a un punto, senza parametri per averne di più: la griglia divide una cella solo quando il ventesimo negozio è ancora più vicino dell'angolo della cella.
 
 **OpenStreetMap come riserva**: `fetch_osm.py` assegna ogni Packstation, Postfiliale, Paketshop o
 locker di OSM a tutte le reti che compaiono in `brand`, `operator` o `post_office:brand`, e salva solo
@@ -102,6 +104,7 @@ python scripts/prepare_territorium.py          # confini e abitanti BKG VG250-EW
 python scripts/fetch_dpd.py                    # DPD Pickup: ~1 min
 python scripts/fetch_dhl.py                    # Deutsche Post / DHL (DHL_API_KEY facoltativa)
 python scripts/fetch_gls.py                    # GLS
+python scripts/fetch_hermes.py                 # Hermes PaketShop
 python scripts/fetch_fedex.py                  # FedEx: ~20 min
 python scripts/fetch_osm.py                    # OpenStreetMap: le reti senza fonte diretta
 python scripts/fetch_ups_pc.py                 # UPS Access Point, dal PC (browser visibile)
@@ -153,6 +156,7 @@ paketstationen-deutschland/
 │   ├── fetch_dpd.py             # DPD Pickup
 │   ├── fetch_dhl.py             # Deutsche Post / DHL
 │   ├── fetch_gls.py             # GLS (API della mappa)
+│   ├── fetch_hermes.py          # Hermes (API del PaketShop-Finder)
 │   ├── fetch_fedex.py           # FedEx
 │   ├── fetch_osm.py             # OpenStreetMap, per le reti senza fonte diretta
 │   ├── fetch_ups_pc.py          # UPS dal PC

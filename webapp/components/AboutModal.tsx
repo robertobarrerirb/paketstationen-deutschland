@@ -12,7 +12,7 @@ interface AboutModalProps {
 /** Where each network's points come from (scripts/fetch_*.py). */
 const SOURCES: Record<Carrier, { endpoint: string; url: string }> = {
   DHL: { endpoint: 'api-gw.dhlparcel.nl/parcel-shop-locations/DE/by-geo · api.dhl.com/location-finder/v1 · OpenStreetMap', url: 'https://www.dhl.de/de/privatkunden/dhl-standorte-finden.html' },
-  Hermes: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://www.myhermes.de/paketshopfinder/' },
+  Hermes: { endpoint: 'paketshop.myhermes.de/api/v1/parcelshops/search', url: 'https://www.myhermes.de/paketshopfinder/' },
   DPD: { endpoint: 'pickup.dpd.cz/api/getAll?country=276', url: 'https://www.dpd.com/de/de/' },
   GLS: { endpoint: 'api.gls-group.net/parcel-shop-management/v2/available-public-parcel-shops-pse-bulk', url: 'https://gls-group.com/DE/de/paketshop-finden/' },
   UPS: { endpoint: 'widgets.ups.com/api/ups.app/xml/Locator', url: 'https://www.ups.com/de' },

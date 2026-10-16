@@ -74,6 +74,13 @@ jobs:
         timeout-minutes: 60
         continue-on-error: true
 
+      # 20 PaketShop per ricerca: griglia fitta, qualche migliaio di chiamate
+      - name: Hermes (API del PaketShop-Finder)
+        id: fetch_hermes
+        run: python -u scripts/fetch_hermes.py 2>&1 | tee logs/hermes.log
+        timeout-minutes: 90
+        continue-on-error: true
+
       # Una chiamata al secondo: la ricerca FedEx blocca l'IP dopo una raffica
       - name: FedEx
         id: fetch_fedex
@@ -82,7 +89,7 @@ jobs:
         continue-on-error: true
 
       # Dopo le fonti dirette: OpenStreetMap riempie le reti che non ne hanno
-      # (Hermes, myflexbox, DeinFach, MBE, Nova Post, Parcelly; DHL, Amazon e UPS
+      # (myflexbox, DeinFach, MBE, Nova Post, Parcelly; Hermes, DHL, Amazon e UPS
       # finché non hanno una cache da fonte diretta) e non sovrascrive mai una
       # cache da fonte diretta.
       - name: OpenStreetMap (reti senza fonte diretta)
@@ -101,6 +108,7 @@ jobs:
           [ "${{ steps.fetch_dpd.outcome }}" = "failure" ] && failed="${failed}DPD "
           [ "${{ steps.fetch_dhl.outcome }}" = "failure" ] && failed="${failed}DHL "
           [ "${{ steps.fetch_gls.outcome }}" = "failure" ] && failed="${failed}GLS "
+          [ "${{ steps.fetch_hermes.outcome }}" = "failure" ] && failed="${failed}Hermes "
           [ "${{ steps.fetch_fedex.outcome }}" = "failure" ] && failed="${failed}FedEx "
           [ "${{ steps.fetch_osm.outcome }}" = "failure" ] && failed="${failed}OSM "
           if [ -n "$failed" ]; then

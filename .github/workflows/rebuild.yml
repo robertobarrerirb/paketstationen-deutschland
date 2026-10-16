@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       corriere:
-        description: 'Riscarica prima solo questo corriere (dhl, dpd, gls, osm, fedex); vuoto = nessuno'
+        description: 'Riscarica prima solo questo corriere (dhl, dpd, gls, hermes, osm, fedex); vuoto = nessuno'
         type: string
         default: ''
       force_save:
@@ -42,7 +42,7 @@ jobs:
         run: |
           mkdir -p logs
           c="${{ inputs.corriere }}"
-          case "$c" in dhl|dpd|gls|osm|fedex) ;; *) echo "corriere sconosciuto: $c"; exit 1;; esac
+          case "$c" in dhl|dpd|gls|hermes|osm|fedex) ;; *) echo "corriere sconosciuto: $c"; exit 1;; esac
           python -u "scripts/fetch_${c}.py" 2>&1 | tee "logs/${c}.log"
         timeout-minutes: 90
         continue-on-error: true

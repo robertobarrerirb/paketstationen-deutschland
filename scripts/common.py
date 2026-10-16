@@ -219,7 +219,7 @@ def week_from(windows_by_day: Dict[int, List[tuple]]) -> Optional[Dict[str, str]
 
 
 def crawl_cells(search, start_km: float, cap: int, min_km: float = 0.5,
-                workers: int = 1, label: str = "") -> List[Dict[str, Any]]:
+                workers: int = 1, label: str = "", full=None) -> List[Dict[str, Any]]:
     """
     Adaptive square-cell crawl for "nearest N points" style APIs.
 
@@ -227,6 +227,9 @@ def crawl_cells(search, start_km: float, cap: int, min_km: float = 0.5,
     reaches its corners (0.707·s). When a search returns `cap` results the cell
     may hide more, so it is split in four. `search(lat, lon, radius_m)` returns
     a list of raw items; duplicates across cells are removed by the caller.
+    `full(items, radius_m)` overrides the "may hide more" test, for APIs that
+    always return the nearest N whatever the radius (split only when the N-th
+    is still inside the cell's reach).
     """
     import math
     from concurrent.futures import ThreadPoolExecutor
@@ -251,7 +254,8 @@ def crawl_cells(search, start_km: float, cap: int, min_km: float = 0.5,
             for (lat, lon, side), items in pool.map(run, batch):
                 calls += 1
                 results.extend(items)
-                if len(items) >= cap and side / 2 >= min_km:
+                hides_more = full(items, side * 0.75 * 1000) if full else len(items) >= cap
+                if hides_more and side / 2 >= min_km:
                     half = side / 2
                     dlat = half / 2 / 111.0
                     dlon = half / 2 / (111.320 * math.cos(math.radians(lat)))
