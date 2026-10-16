@@ -248,6 +248,9 @@ def main() -> int:
     for carrier, stem in STEMS.items():
         if carrier in skip:
             continue
+        if not by_carrier[carrier] and not (DATA_DIR / f"{stem}_all_locations.json").exists():
+            print(f"   ⚪ {carrier}: nessun punto su OpenStreetMap, nessuna cache da salvare")
+            continue
         try:
             save(carrier, stem, dedupe(by_carrier[carrier]),
                  "OpenStreetMap (Overpass API), © OpenStreetMap contributors, ODbL", "osm-overpass")
