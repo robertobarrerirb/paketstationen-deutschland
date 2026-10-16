@@ -1,0 +1,16 @@
+📡 Hermes PaketShop (API del PaketShop-Finder di myhermes.de, 20 per ricerca, griglia adattiva)
+   Hermes: 1019 initial cells of 20 km
+   Hermes: 1019 calls, 19857 raw results, 1848 cells split
+   Hermes: 2867 calls, 56817 raw results, 1236 cells split
+   Hermes: 4103 calls, 81537 raw results, 812 cells split
+   Hermes: 4915 calls, 97777 raw results, 376 cells split
+   Hermes: 5291 calls, 105297 raw results, 44 cells split
+   Hermes: 5335 calls in total
+
+📦 Hermes: 17498 points
+   pickup_point      17468
+   locker               30
+  ℹ️  Hermes: 556.3% increase (2666 → 17498)
+💾 Saved to: /home/runner/work/paketstationen-deutschland/paketstationen-deutschland/data/hermes_all_locations.json
+   File size: 7126.7 KB
+   Locations: 17498
