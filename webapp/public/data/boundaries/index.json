@@ -1,0 +1,3608 @@
+{
+ "generated_at": "2026-10-16T14:01:19.781426Z",
+ "departments_file": "boundaries/kreise.geojson",
+ "total_departments": 400,
+ "total_boundaries": 10956,
+ "departments": [
+  {
+   "name": "Flensburg",
+   "code": "01001",
+   "slug": "kreis-flensburg",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-flensburg.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Kiel",
+   "code": "01002",
+   "slug": "kreis-kiel",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-kiel.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Lübeck",
+   "code": "01003",
+   "slug": "kreis-luebeck",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-luebeck.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Neumünster",
+   "code": "01004",
+   "slug": "kreis-neumuenster",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-neumuenster.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Kreis Dithmarschen",
+   "code": "01051",
+   "slug": "kreis-kreis-dithmarschen",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-kreis-dithmarschen.geojson",
+   "size_mb": 0.1,
+   "boundaries_count": 116
+  },
+  {
+   "name": "Kreis Herzogtum Lauenburg",
+   "code": "01053",
+   "slug": "kreis-kreis-herzogtum-lauenburg",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-kreis-herzogtum-lauenburg.geojson",
+   "size_mb": 0.14,
+   "boundaries_count": 133
+  },
+  {
+   "name": "Kreis Nordfriesland",
+   "code": "01054",
+   "slug": "kreis-kreis-nordfriesland",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-kreis-nordfriesland.geojson",
+   "size_mb": 0.11,
+   "boundaries_count": 133
+  },
+  {
+   "name": "Kreis Ostholstein",
+   "code": "01055",
+   "slug": "kreis-kreis-ostholstein",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-kreis-ostholstein.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 36
+  },
+  {
+   "name": "Kreis Pinneberg",
+   "code": "01056",
+   "slug": "kreis-kreis-pinneberg",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-kreis-pinneberg.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 49
+  },
+  {
+   "name": "Kreis Plön",
+   "code": "01057",
+   "slug": "kreis-kreis-ploen",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-kreis-ploen.geojson",
+   "size_mb": 0.12,
+   "boundaries_count": 85
+  },
+  {
+   "name": "Kreis Rendsburg-Eckernförde",
+   "code": "01058",
+   "slug": "kreis-kreis-rendsburg-eckernfoerde",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-kreis-rendsburg-eckernfoerde.geojson",
+   "size_mb": 0.22,
+   "boundaries_count": 165
+  },
+  {
+   "name": "Kreis Schleswig-Flensburg",
+   "code": "01059",
+   "slug": "kreis-kreis-schleswig-flensburg",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-kreis-schleswig-flensburg.geojson",
+   "size_mb": 0.16,
+   "boundaries_count": 123
+  },
+  {
+   "name": "Kreis Segeberg",
+   "code": "01060",
+   "slug": "kreis-kreis-segeberg",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-kreis-segeberg.geojson",
+   "size_mb": 0.11,
+   "boundaries_count": 96
+  },
+  {
+   "name": "Kreis Steinburg",
+   "code": "01061",
+   "slug": "kreis-kreis-steinburg",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-kreis-steinburg.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 111
+  },
+  {
+   "name": "Kreis Stormarn",
+   "code": "01062",
+   "slug": "kreis-kreis-stormarn",
+   "region_slug": "land-schleswig-holstein",
+   "file": "boundaries/kreis-kreis-stormarn.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 55
+  },
+  {
+   "name": "Hamburg",
+   "code": "02000",
+   "slug": "kreis-hamburg",
+   "region_slug": "land-hamburg",
+   "file": "boundaries/kreis-hamburg.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Braunschweig",
+   "code": "03101",
+   "slug": "kreis-braunschweig",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-braunschweig.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Salzgitter",
+   "code": "03102",
+   "slug": "kreis-salzgitter",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-salzgitter.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Wolfsburg",
+   "code": "03103",
+   "slug": "kreis-wolfsburg",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-wolfsburg.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Gifhorn",
+   "code": "03151",
+   "slug": "kreis-landkreis-gifhorn",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-gifhorn.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 42
+  },
+  {
+   "name": "Landkreis Goslar",
+   "code": "03153",
+   "slug": "kreis-landkreis-goslar",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-goslar.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 8
+  },
+  {
+   "name": "Landkreis Helmstedt",
+   "code": "03154",
+   "slug": "kreis-landkreis-helmstedt",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-helmstedt.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 28
+  },
+  {
+   "name": "Landkreis Northeim",
+   "code": "03155",
+   "slug": "kreis-landkreis-northeim",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-northeim.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 12
+  },
+  {
+   "name": "Landkreis Peine",
+   "code": "03157",
+   "slug": "kreis-landkreis-peine",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-peine.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 7
+  },
+  {
+   "name": "Landkreis Wolfenbüttel",
+   "code": "03158",
+   "slug": "kreis-landkreis-wolfenbuettel",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-wolfenbuettel.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 35
+  },
+  {
+   "name": "Landkreis Göttingen",
+   "code": "03159",
+   "slug": "kreis-landkreis-goettingen",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-goettingen.geojson",
+   "size_mb": 0.1,
+   "boundaries_count": 40
+  },
+  {
+   "name": "Landkreis Region Hannover",
+   "code": "03241",
+   "slug": "kreis-landkreis-region-hannover",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-region-hannover.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 21
+  },
+  {
+   "name": "Landkreis Diepholz",
+   "code": "03251",
+   "slug": "kreis-landkreis-diepholz",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-diepholz.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 45
+  },
+  {
+   "name": "Landkreis Hameln-Pyrmont",
+   "code": "03252",
+   "slug": "kreis-landkreis-hameln-pyrmont",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-hameln-pyrmont.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 8
+  },
+  {
+   "name": "Landkreis Hildesheim",
+   "code": "03254",
+   "slug": "kreis-landkreis-hildesheim",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-hildesheim.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 20
+  },
+  {
+   "name": "Landkreis Holzminden",
+   "code": "03255",
+   "slug": "kreis-landkreis-holzminden",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-holzminden.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 39
+  },
+  {
+   "name": "Landkreis Nienburg (Weser)",
+   "code": "03256",
+   "slug": "kreis-landkreis-nienburg-weser",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-nienburg-weser.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 36
+  },
+  {
+   "name": "Landkreis Schaumburg",
+   "code": "03257",
+   "slug": "kreis-landkreis-schaumburg",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-schaumburg.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 38
+  },
+  {
+   "name": "Landkreis Celle",
+   "code": "03351",
+   "slug": "kreis-landkreis-celle",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-celle.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 21
+  },
+  {
+   "name": "Landkreis Cuxhaven",
+   "code": "03352",
+   "slug": "kreis-landkreis-cuxhaven",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-cuxhaven.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 29
+  },
+  {
+   "name": "Landkreis Harburg",
+   "code": "03353",
+   "slug": "kreis-landkreis-harburg",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-harburg.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 42
+  },
+  {
+   "name": "Landkreis Lüchow-Dannenberg",
+   "code": "03354",
+   "slug": "kreis-landkreis-luechow-dannenberg",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-luechow-dannenberg.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 29
+  },
+  {
+   "name": "Landkreis Lüneburg",
+   "code": "03355",
+   "slug": "kreis-landkreis-lueneburg",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-lueneburg.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 43
+  },
+  {
+   "name": "Landkreis Osterholz",
+   "code": "03356",
+   "slug": "kreis-landkreis-osterholz",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-osterholz.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 11
+  },
+  {
+   "name": "Landkreis Rotenburg (Wümme)",
+   "code": "03357",
+   "slug": "kreis-landkreis-rotenburg-wuemme",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-rotenburg-wuemme.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 57
+  },
+  {
+   "name": "Landkreis Heidekreis",
+   "code": "03358",
+   "slug": "kreis-landkreis-heidekreis",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-heidekreis.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 23
+  },
+  {
+   "name": "Landkreis Stade",
+   "code": "03359",
+   "slug": "kreis-landkreis-stade",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-stade.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 40
+  },
+  {
+   "name": "Landkreis Uelzen",
+   "code": "03360",
+   "slug": "kreis-landkreis-uelzen",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-uelzen.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 27
+  },
+  {
+   "name": "Landkreis Verden",
+   "code": "03361",
+   "slug": "kreis-landkreis-verden",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-verden.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 11
+  },
+  {
+   "name": "Delmenhorst",
+   "code": "03401",
+   "slug": "kreis-delmenhorst",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-delmenhorst.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Emden",
+   "code": "03402",
+   "slug": "kreis-emden",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-emden.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Oldenburg (Oldb)",
+   "code": "03403",
+   "slug": "kreis-oldenburg-oldb",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-oldenburg-oldb.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Osnabrück",
+   "code": "03404",
+   "slug": "kreis-osnabrueck",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-osnabrueck.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Wilhelmshaven",
+   "code": "03405",
+   "slug": "kreis-wilhelmshaven",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-wilhelmshaven.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Ammerland",
+   "code": "03451",
+   "slug": "kreis-landkreis-ammerland",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-ammerland.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 6
+  },
+  {
+   "name": "Landkreis Aurich",
+   "code": "03452",
+   "slug": "kreis-landkreis-aurich",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-aurich.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 25
+  },
+  {
+   "name": "Landkreis Cloppenburg",
+   "code": "03453",
+   "slug": "kreis-landkreis-cloppenburg",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-cloppenburg.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 13
+  },
+  {
+   "name": "Landkreis Emsland",
+   "code": "03454",
+   "slug": "kreis-landkreis-emsland",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-emsland.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 60
+  },
+  {
+   "name": "Landkreis Friesland",
+   "code": "03455",
+   "slug": "kreis-landkreis-friesland",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-friesland.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 8
+  },
+  {
+   "name": "Landkreis Grafschaft Bentheim",
+   "code": "03456",
+   "slug": "kreis-landkreis-grafschaft-bentheim",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-grafschaft-bentheim.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 25
+  },
+  {
+   "name": "Landkreis Leer",
+   "code": "03457",
+   "slug": "kreis-landkreis-leer",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-leer.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 20
+  },
+  {
+   "name": "Landkreis Oldenburg",
+   "code": "03458",
+   "slug": "kreis-landkreis-oldenburg",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-oldenburg.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 15
+  },
+  {
+   "name": "Landkreis Osnabrück",
+   "code": "03459",
+   "slug": "kreis-landkreis-osnabrueck",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-osnabrueck.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 34
+  },
+  {
+   "name": "Landkreis Vechta",
+   "code": "03460",
+   "slug": "kreis-landkreis-vechta",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-vechta.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 10
+  },
+  {
+   "name": "Landkreis Wesermarsch",
+   "code": "03461",
+   "slug": "kreis-landkreis-wesermarsch",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-wesermarsch.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 9
+  },
+  {
+   "name": "Landkreis Wittmund",
+   "code": "03462",
+   "slug": "kreis-landkreis-wittmund",
+   "region_slug": "land-niedersachsen",
+   "file": "boundaries/kreis-landkreis-wittmund.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 19
+  },
+  {
+   "name": "Bremen",
+   "code": "04011",
+   "slug": "kreis-bremen",
+   "region_slug": "land-bremen",
+   "file": "boundaries/kreis-bremen.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Bremerhaven",
+   "code": "04012",
+   "slug": "kreis-bremerhaven",
+   "region_slug": "land-bremen",
+   "file": "boundaries/kreis-bremerhaven.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Düsseldorf",
+   "code": "05111",
+   "slug": "kreis-duesseldorf",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-duesseldorf.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Duisburg",
+   "code": "05112",
+   "slug": "kreis-duisburg",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-duisburg.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Essen",
+   "code": "05113",
+   "slug": "kreis-essen",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-essen.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Krefeld",
+   "code": "05114",
+   "slug": "kreis-krefeld",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-krefeld.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Mönchengladbach",
+   "code": "05116",
+   "slug": "kreis-moenchengladbach",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-moenchengladbach.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Mülheim an der Ruhr",
+   "code": "05117",
+   "slug": "kreis-muelheim-an-der-ruhr",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-muelheim-an-der-ruhr.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Oberhausen",
+   "code": "05119",
+   "slug": "kreis-oberhausen",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-oberhausen.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Remscheid",
+   "code": "05120",
+   "slug": "kreis-remscheid",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-remscheid.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Solingen",
+   "code": "05122",
+   "slug": "kreis-solingen",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-solingen.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Wuppertal",
+   "code": "05124",
+   "slug": "kreis-wuppertal",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-wuppertal.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Kreis Kleve",
+   "code": "05154",
+   "slug": "kreis-kreis-kleve",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-kleve.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 16
+  },
+  {
+   "name": "Kreis Mettmann",
+   "code": "05158",
+   "slug": "kreis-kreis-mettmann",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-mettmann.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 10
+  },
+  {
+   "name": "Kreis Rhein-Kreis Neuss",
+   "code": "05162",
+   "slug": "kreis-kreis-rhein-kreis-neuss",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-rhein-kreis-neuss.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 8
+  },
+  {
+   "name": "Kreis Viersen",
+   "code": "05166",
+   "slug": "kreis-kreis-viersen",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-viersen.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 9
+  },
+  {
+   "name": "Kreis Wesel",
+   "code": "05170",
+   "slug": "kreis-kreis-wesel",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-wesel.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 13
+  },
+  {
+   "name": "Bonn",
+   "code": "05314",
+   "slug": "kreis-bonn",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-bonn.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Köln",
+   "code": "05315",
+   "slug": "kreis-koeln",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-koeln.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Leverkusen",
+   "code": "05316",
+   "slug": "kreis-leverkusen",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-leverkusen.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Kreis Städteregion Aachen",
+   "code": "05334",
+   "slug": "kreis-kreis-staedteregion-aachen",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-staedteregion-aachen.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 10
+  },
+  {
+   "name": "Kreis Düren",
+   "code": "05358",
+   "slug": "kreis-kreis-dueren",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-dueren.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 15
+  },
+  {
+   "name": "Kreis Rhein-Erft-Kreis",
+   "code": "05362",
+   "slug": "kreis-kreis-rhein-erft-kreis",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-rhein-erft-kreis.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 10
+  },
+  {
+   "name": "Kreis Euskirchen",
+   "code": "05366",
+   "slug": "kreis-kreis-euskirchen",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-euskirchen.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 11
+  },
+  {
+   "name": "Kreis Heinsberg",
+   "code": "05370",
+   "slug": "kreis-kreis-heinsberg",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-heinsberg.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 10
+  },
+  {
+   "name": "Kreis Oberbergischer Kreis",
+   "code": "05374",
+   "slug": "kreis-kreis-oberbergischer-kreis",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-oberbergischer-kreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 13
+  },
+  {
+   "name": "Kreis Rheinisch-Bergischer Kreis",
+   "code": "05378",
+   "slug": "kreis-kreis-rheinisch-bergischer-kreis",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-rheinisch-bergischer-kreis.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 8
+  },
+  {
+   "name": "Kreis Rhein-Sieg-Kreis",
+   "code": "05382",
+   "slug": "kreis-kreis-rhein-sieg-kreis",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-rhein-sieg-kreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 19
+  },
+  {
+   "name": "Bottrop",
+   "code": "05512",
+   "slug": "kreis-bottrop",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-bottrop.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Gelsenkirchen",
+   "code": "05513",
+   "slug": "kreis-gelsenkirchen",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-gelsenkirchen.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Münster",
+   "code": "05515",
+   "slug": "kreis-muenster",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-muenster.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Kreis Borken",
+   "code": "05554",
+   "slug": "kreis-kreis-borken",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-borken.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 17
+  },
+  {
+   "name": "Kreis Coesfeld",
+   "code": "05558",
+   "slug": "kreis-kreis-coesfeld",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-coesfeld.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 11
+  },
+  {
+   "name": "Kreis Recklinghausen",
+   "code": "05562",
+   "slug": "kreis-kreis-recklinghausen",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-recklinghausen.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 10
+  },
+  {
+   "name": "Kreis Steinfurt",
+   "code": "05566",
+   "slug": "kreis-kreis-steinfurt",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-steinfurt.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 24
+  },
+  {
+   "name": "Kreis Warendorf",
+   "code": "05570",
+   "slug": "kreis-kreis-warendorf",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-warendorf.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 13
+  },
+  {
+   "name": "Bielefeld",
+   "code": "05711",
+   "slug": "kreis-bielefeld",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-bielefeld.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Kreis Gütersloh",
+   "code": "05754",
+   "slug": "kreis-kreis-guetersloh",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-guetersloh.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 13
+  },
+  {
+   "name": "Kreis Herford",
+   "code": "05758",
+   "slug": "kreis-kreis-herford",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-herford.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 9
+  },
+  {
+   "name": "Kreis Höxter",
+   "code": "05762",
+   "slug": "kreis-kreis-hoexter",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-hoexter.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 10
+  },
+  {
+   "name": "Kreis Lippe",
+   "code": "05766",
+   "slug": "kreis-kreis-lippe",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-lippe.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 16
+  },
+  {
+   "name": "Kreis Minden-Lübbecke",
+   "code": "05770",
+   "slug": "kreis-kreis-minden-luebbecke",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-minden-luebbecke.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 11
+  },
+  {
+   "name": "Kreis Paderborn",
+   "code": "05774",
+   "slug": "kreis-kreis-paderborn",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-paderborn.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 10
+  },
+  {
+   "name": "Bochum",
+   "code": "05911",
+   "slug": "kreis-bochum",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-bochum.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Dortmund",
+   "code": "05913",
+   "slug": "kreis-dortmund",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-dortmund.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Hagen",
+   "code": "05914",
+   "slug": "kreis-hagen",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-hagen.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Hamm",
+   "code": "05915",
+   "slug": "kreis-hamm",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-hamm.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Herne",
+   "code": "05916",
+   "slug": "kreis-herne",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-herne.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Kreis Ennepe-Ruhr-Kreis",
+   "code": "05954",
+   "slug": "kreis-kreis-ennepe-ruhr-kreis",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-ennepe-ruhr-kreis.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 9
+  },
+  {
+   "name": "Kreis Hochsauerlandkreis",
+   "code": "05958",
+   "slug": "kreis-kreis-hochsauerlandkreis",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-hochsauerlandkreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 12
+  },
+  {
+   "name": "Kreis Märkischer Kreis",
+   "code": "05962",
+   "slug": "kreis-kreis-maerkischer-kreis",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-maerkischer-kreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 15
+  },
+  {
+   "name": "Kreis Olpe",
+   "code": "05966",
+   "slug": "kreis-kreis-olpe",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-olpe.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 7
+  },
+  {
+   "name": "Kreis Siegen-Wittgenstein",
+   "code": "05970",
+   "slug": "kreis-kreis-siegen-wittgenstein",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-siegen-wittgenstein.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 11
+  },
+  {
+   "name": "Kreis Soest",
+   "code": "05974",
+   "slug": "kreis-kreis-soest",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-soest.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 14
+  },
+  {
+   "name": "Kreis Unna",
+   "code": "05978",
+   "slug": "kreis-kreis-unna",
+   "region_slug": "land-nordrhein-westfalen",
+   "file": "boundaries/kreis-kreis-unna.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 10
+  },
+  {
+   "name": "Darmstadt",
+   "code": "06411",
+   "slug": "kreis-darmstadt",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-darmstadt.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Frankfurt am Main",
+   "code": "06412",
+   "slug": "kreis-frankfurt-am-main",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-frankfurt-am-main.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Offenbach am Main",
+   "code": "06413",
+   "slug": "kreis-offenbach-am-main",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-offenbach-am-main.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Wiesbaden",
+   "code": "06414",
+   "slug": "kreis-wiesbaden",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-wiesbaden.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Bergstraße",
+   "code": "06431",
+   "slug": "kreis-landkreis-bergstrasse",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-bergstrasse.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 23
+  },
+  {
+   "name": "Landkreis Darmstadt-Dieburg",
+   "code": "06432",
+   "slug": "kreis-landkreis-darmstadt-dieburg",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-darmstadt-dieburg.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 23
+  },
+  {
+   "name": "Landkreis Groß-Gerau",
+   "code": "06433",
+   "slug": "kreis-landkreis-gross-gerau",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-gross-gerau.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 14
+  },
+  {
+   "name": "Landkreis Hochtaunuskreis",
+   "code": "06434",
+   "slug": "kreis-landkreis-hochtaunuskreis",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-hochtaunuskreis.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 13
+  },
+  {
+   "name": "Landkreis Main-Kinzig-Kreis",
+   "code": "06435",
+   "slug": "kreis-landkreis-main-kinzig-kreis",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-main-kinzig-kreis.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 30
+  },
+  {
+   "name": "Landkreis Main-Taunus-Kreis",
+   "code": "06436",
+   "slug": "kreis-landkreis-main-taunus-kreis",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-main-taunus-kreis.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 12
+  },
+  {
+   "name": "Landkreis Odenwaldkreis",
+   "code": "06437",
+   "slug": "kreis-landkreis-odenwaldkreis",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-odenwaldkreis.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 12
+  },
+  {
+   "name": "Landkreis Offenbach",
+   "code": "06438",
+   "slug": "kreis-landkreis-offenbach",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-offenbach.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 13
+  },
+  {
+   "name": "Landkreis Rheingau-Taunus-Kreis",
+   "code": "06439",
+   "slug": "kreis-landkreis-rheingau-taunus-kreis",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-rheingau-taunus-kreis.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 17
+  },
+  {
+   "name": "Landkreis Wetteraukreis",
+   "code": "06440",
+   "slug": "kreis-landkreis-wetteraukreis",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-wetteraukreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 25
+  },
+  {
+   "name": "Landkreis Gießen",
+   "code": "06531",
+   "slug": "kreis-landkreis-giessen",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-giessen.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 18
+  },
+  {
+   "name": "Landkreis Lahn-Dill-Kreis",
+   "code": "06532",
+   "slug": "kreis-landkreis-lahn-dill-kreis",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-lahn-dill-kreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 23
+  },
+  {
+   "name": "Landkreis Limburg-Weilburg",
+   "code": "06533",
+   "slug": "kreis-landkreis-limburg-weilburg",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-limburg-weilburg.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 19
+  },
+  {
+   "name": "Landkreis Marburg-Biedenkopf",
+   "code": "06534",
+   "slug": "kreis-landkreis-marburg-biedenkopf",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-marburg-biedenkopf.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 22
+  },
+  {
+   "name": "Landkreis Vogelsbergkreis",
+   "code": "06535",
+   "slug": "kreis-landkreis-vogelsbergkreis",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-vogelsbergkreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 19
+  },
+  {
+   "name": "Kassel",
+   "code": "06611",
+   "slug": "kreis-kassel",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-kassel.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Fulda",
+   "code": "06631",
+   "slug": "kreis-landkreis-fulda",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-fulda.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 23
+  },
+  {
+   "name": "Landkreis Hersfeld-Rotenburg",
+   "code": "06632",
+   "slug": "kreis-landkreis-hersfeld-rotenburg",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-hersfeld-rotenburg.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 20
+  },
+  {
+   "name": "Landkreis Kassel",
+   "code": "06633",
+   "slug": "kreis-landkreis-kassel",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-kassel.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 29
+  },
+  {
+   "name": "Landkreis Schwalm-Eder-Kreis",
+   "code": "06634",
+   "slug": "kreis-landkreis-schwalm-eder-kreis",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-schwalm-eder-kreis.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 27
+  },
+  {
+   "name": "Landkreis Waldeck-Frankenberg",
+   "code": "06635",
+   "slug": "kreis-landkreis-waldeck-frankenberg",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-waldeck-frankenberg.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 21
+  },
+  {
+   "name": "Landkreis Werra-Meißner-Kreis",
+   "code": "06636",
+   "slug": "kreis-landkreis-werra-meissner-kreis",
+   "region_slug": "land-hessen",
+   "file": "boundaries/kreis-landkreis-werra-meissner-kreis.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 17
+  },
+  {
+   "name": "Koblenz",
+   "code": "07111",
+   "slug": "kreis-koblenz",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-koblenz.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Ahrweiler",
+   "code": "07131",
+   "slug": "kreis-landkreis-ahrweiler",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-ahrweiler.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 74
+  },
+  {
+   "name": "Landkreis Altenkirchen (Westerwald)",
+   "code": "07132",
+   "slug": "kreis-landkreis-altenkirchen-westerwald",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-altenkirchen-westerwald.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 118
+  },
+  {
+   "name": "Landkreis Bad Kreuznach",
+   "code": "07133",
+   "slug": "kreis-landkreis-bad-kreuznach",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-bad-kreuznach.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 118
+  },
+  {
+   "name": "Landkreis Birkenfeld",
+   "code": "07134",
+   "slug": "kreis-landkreis-birkenfeld",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-birkenfeld.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 96
+  },
+  {
+   "name": "Landkreis Cochem-Zell",
+   "code": "07135",
+   "slug": "kreis-landkreis-cochem-zell",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-cochem-zell.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 89
+  },
+  {
+   "name": "Landkreis Mayen-Koblenz",
+   "code": "07137",
+   "slug": "kreis-landkreis-mayen-koblenz",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-mayen-koblenz.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 87
+  },
+  {
+   "name": "Landkreis Neuwied",
+   "code": "07138",
+   "slug": "kreis-landkreis-neuwied",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-neuwied.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 62
+  },
+  {
+   "name": "Landkreis Rhein-Hunsrück-Kreis",
+   "code": "07140",
+   "slug": "kreis-landkreis-rhein-hunsrueck-kreis",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-rhein-hunsrueck-kreis.geojson",
+   "size_mb": 0.11,
+   "boundaries_count": 137
+  },
+  {
+   "name": "Landkreis Rhein-Lahn-Kreis",
+   "code": "07141",
+   "slug": "kreis-landkreis-rhein-lahn-kreis",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-rhein-lahn-kreis.geojson",
+   "size_mb": 0.13,
+   "boundaries_count": 137
+  },
+  {
+   "name": "Landkreis Westerwaldkreis",
+   "code": "07143",
+   "slug": "kreis-landkreis-westerwaldkreis",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-westerwaldkreis.geojson",
+   "size_mb": 0.14,
+   "boundaries_count": 192
+  },
+  {
+   "name": "Trier",
+   "code": "07211",
+   "slug": "kreis-trier",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-trier.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Bernkastel-Wittlich",
+   "code": "07231",
+   "slug": "kreis-landkreis-bernkastel-wittlich",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-bernkastel-wittlich.geojson",
+   "size_mb": 0.1,
+   "boundaries_count": 107
+  },
+  {
+   "name": "Landkreis Eifelkreis Bitburg-Prüm",
+   "code": "07232",
+   "slug": "kreis-landkreis-eifelkreis-bitburg-pruem",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-eifelkreis-bitburg-pruem.geojson",
+   "size_mb": 0.21,
+   "boundaries_count": 234
+  },
+  {
+   "name": "Landkreis Vulkaneifel",
+   "code": "07233",
+   "slug": "kreis-landkreis-vulkaneifel",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-vulkaneifel.geojson",
+   "size_mb": 0.1,
+   "boundaries_count": 109
+  },
+  {
+   "name": "Landkreis Trier-Saarburg",
+   "code": "07235",
+   "slug": "kreis-landkreis-trier-saarburg",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-trier-saarburg.geojson",
+   "size_mb": 0.1,
+   "boundaries_count": 104
+  },
+  {
+   "name": "Frankenthal (Pfalz)",
+   "code": "07311",
+   "slug": "kreis-frankenthal-pfalz",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-frankenthal-pfalz.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Kaiserslautern",
+   "code": "07312",
+   "slug": "kreis-kaiserslautern",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-kaiserslautern.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landau in der Pfalz",
+   "code": "07313",
+   "slug": "kreis-landau-in-der-pfalz",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landau-in-der-pfalz.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Ludwigshafen am Rhein",
+   "code": "07314",
+   "slug": "kreis-ludwigshafen-am-rhein",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-ludwigshafen-am-rhein.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Mainz",
+   "code": "07315",
+   "slug": "kreis-mainz",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-mainz.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Neustadt an der Weinstraße",
+   "code": "07316",
+   "slug": "kreis-neustadt-an-der-weinstrasse",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-neustadt-an-der-weinstrasse.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Pirmasens",
+   "code": "07317",
+   "slug": "kreis-pirmasens",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-pirmasens.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Speyer",
+   "code": "07318",
+   "slug": "kreis-speyer",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-speyer.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Worms",
+   "code": "07319",
+   "slug": "kreis-worms",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-worms.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Zweibrücken",
+   "code": "07320",
+   "slug": "kreis-zweibruecken",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-zweibruecken.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Alzey-Worms",
+   "code": "07331",
+   "slug": "kreis-landkreis-alzey-worms",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-alzey-worms.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 69
+  },
+  {
+   "name": "Landkreis Bad Dürkheim",
+   "code": "07332",
+   "slug": "kreis-landkreis-bad-duerkheim",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-bad-duerkheim.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 48
+  },
+  {
+   "name": "Landkreis Donnersbergkreis",
+   "code": "07333",
+   "slug": "kreis-landkreis-donnersbergkreis",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-donnersbergkreis.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 81
+  },
+  {
+   "name": "Landkreis Germersheim",
+   "code": "07334",
+   "slug": "kreis-landkreis-germersheim",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-germersheim.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 31
+  },
+  {
+   "name": "Landkreis Kaiserslautern",
+   "code": "07335",
+   "slug": "kreis-landkreis-kaiserslautern",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-kaiserslautern.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 50
+  },
+  {
+   "name": "Landkreis Kusel",
+   "code": "07336",
+   "slug": "kreis-landkreis-kusel",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-kusel.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 98
+  },
+  {
+   "name": "Landkreis Südliche Weinstraße",
+   "code": "07337",
+   "slug": "kreis-landkreis-suedliche-weinstrasse",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-suedliche-weinstrasse.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 75
+  },
+  {
+   "name": "Landkreis Rhein-Pfalz-Kreis",
+   "code": "07338",
+   "slug": "kreis-landkreis-rhein-pfalz-kreis",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-rhein-pfalz-kreis.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 25
+  },
+  {
+   "name": "Landkreis Mainz-Bingen",
+   "code": "07339",
+   "slug": "kreis-landkreis-mainz-bingen",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-mainz-bingen.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 64
+  },
+  {
+   "name": "Landkreis Südwestpfalz",
+   "code": "07340",
+   "slug": "kreis-landkreis-suedwestpfalz",
+   "region_slug": "land-rheinland-pfalz",
+   "file": "boundaries/kreis-landkreis-suedwestpfalz.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 84
+  },
+  {
+   "name": "Stuttgart",
+   "code": "08111",
+   "slug": "kreis-stuttgart",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-stuttgart.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Böblingen",
+   "code": "08115",
+   "slug": "kreis-landkreis-boeblingen",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-boeblingen.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 26
+  },
+  {
+   "name": "Landkreis Esslingen",
+   "code": "08116",
+   "slug": "kreis-landkreis-esslingen",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-esslingen.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 44
+  },
+  {
+   "name": "Landkreis Göppingen",
+   "code": "08117",
+   "slug": "kreis-landkreis-goeppingen",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-goeppingen.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 38
+  },
+  {
+   "name": "Landkreis Ludwigsburg",
+   "code": "08118",
+   "slug": "kreis-landkreis-ludwigsburg",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-ludwigsburg.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 39
+  },
+  {
+   "name": "Landkreis Rems-Murr-Kreis",
+   "code": "08119",
+   "slug": "kreis-landkreis-rems-murr-kreis",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-rems-murr-kreis.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 31
+  },
+  {
+   "name": "Heilbronn",
+   "code": "08121",
+   "slug": "kreis-heilbronn",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-heilbronn.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Heilbronn",
+   "code": "08125",
+   "slug": "kreis-landkreis-heilbronn",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-heilbronn.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 46
+  },
+  {
+   "name": "Landkreis Hohenlohekreis",
+   "code": "08126",
+   "slug": "kreis-landkreis-hohenlohekreis",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-hohenlohekreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 16
+  },
+  {
+   "name": "Landkreis Schwäbisch Hall",
+   "code": "08127",
+   "slug": "kreis-landkreis-schwaebisch-hall",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-schwaebisch-hall.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 30
+  },
+  {
+   "name": "Landkreis Main-Tauber-Kreis",
+   "code": "08128",
+   "slug": "kreis-landkreis-main-tauber-kreis",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-main-tauber-kreis.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 18
+  },
+  {
+   "name": "Landkreis Heidenheim",
+   "code": "08135",
+   "slug": "kreis-landkreis-heidenheim",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-heidenheim.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 11
+  },
+  {
+   "name": "Landkreis Ostalbkreis",
+   "code": "08136",
+   "slug": "kreis-landkreis-ostalbkreis",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-ostalbkreis.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 42
+  },
+  {
+   "name": "Baden-Baden",
+   "code": "08211",
+   "slug": "kreis-baden-baden",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-baden-baden.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Karlsruhe",
+   "code": "08212",
+   "slug": "kreis-karlsruhe",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-karlsruhe.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Karlsruhe",
+   "code": "08215",
+   "slug": "kreis-landkreis-karlsruhe",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-karlsruhe.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 32
+  },
+  {
+   "name": "Landkreis Rastatt",
+   "code": "08216",
+   "slug": "kreis-landkreis-rastatt",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-rastatt.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 23
+  },
+  {
+   "name": "Heidelberg",
+   "code": "08221",
+   "slug": "kreis-heidelberg",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-heidelberg.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Mannheim",
+   "code": "08222",
+   "slug": "kreis-mannheim",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-mannheim.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Neckar-Odenwald-Kreis",
+   "code": "08225",
+   "slug": "kreis-landkreis-neckar-odenwald-kreis",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-neckar-odenwald-kreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 27
+  },
+  {
+   "name": "Landkreis Rhein-Neckar-Kreis",
+   "code": "08226",
+   "slug": "kreis-landkreis-rhein-neckar-kreis",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-rhein-neckar-kreis.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 54
+  },
+  {
+   "name": "Pforzheim",
+   "code": "08231",
+   "slug": "kreis-pforzheim",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-pforzheim.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Calw",
+   "code": "08235",
+   "slug": "kreis-landkreis-calw",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-calw.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 25
+  },
+  {
+   "name": "Landkreis Enzkreis",
+   "code": "08236",
+   "slug": "kreis-landkreis-enzkreis",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-enzkreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 28
+  },
+  {
+   "name": "Landkreis Freudenstadt",
+   "code": "08237",
+   "slug": "kreis-landkreis-freudenstadt",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-freudenstadt.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 16
+  },
+  {
+   "name": "Freiburg im Breisgau",
+   "code": "08311",
+   "slug": "kreis-freiburg-im-breisgau",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-freiburg-im-breisgau.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Breisgau-Hochschwarzwald",
+   "code": "08315",
+   "slug": "kreis-landkreis-breisgau-hochschwarzwald",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-breisgau-hochschwarzwald.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 50
+  },
+  {
+   "name": "Landkreis Emmendingen",
+   "code": "08316",
+   "slug": "kreis-landkreis-emmendingen",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-emmendingen.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 24
+  },
+  {
+   "name": "Landkreis Ortenaukreis",
+   "code": "08317",
+   "slug": "kreis-landkreis-ortenaukreis",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-ortenaukreis.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 52
+  },
+  {
+   "name": "Landkreis Rottweil",
+   "code": "08325",
+   "slug": "kreis-landkreis-rottweil",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-rottweil.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 21
+  },
+  {
+   "name": "Landkreis Schwarzwald-Baar-Kreis",
+   "code": "08326",
+   "slug": "kreis-landkreis-schwarzwald-baar-kreis",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-schwarzwald-baar-kreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 20
+  },
+  {
+   "name": "Landkreis Tuttlingen",
+   "code": "08327",
+   "slug": "kreis-landkreis-tuttlingen",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-tuttlingen.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 35
+  },
+  {
+   "name": "Landkreis Konstanz",
+   "code": "08335",
+   "slug": "kreis-landkreis-konstanz",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-konstanz.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 25
+  },
+  {
+   "name": "Landkreis Lörrach",
+   "code": "08336",
+   "slug": "kreis-landkreis-loerrach",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-loerrach.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 35
+  },
+  {
+   "name": "Landkreis Waldshut",
+   "code": "08337",
+   "slug": "kreis-landkreis-waldshut",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-waldshut.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 32
+  },
+  {
+   "name": "Landkreis Reutlingen",
+   "code": "08415",
+   "slug": "kreis-landkreis-reutlingen",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-reutlingen.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 27
+  },
+  {
+   "name": "Landkreis Tübingen",
+   "code": "08416",
+   "slug": "kreis-landkreis-tuebingen",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-tuebingen.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 15
+  },
+  {
+   "name": "Landkreis Zollernalbkreis",
+   "code": "08417",
+   "slug": "kreis-landkreis-zollernalbkreis",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-zollernalbkreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 25
+  },
+  {
+   "name": "Ulm",
+   "code": "08421",
+   "slug": "kreis-ulm",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-ulm.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Alb-Donau-Kreis",
+   "code": "08425",
+   "slug": "kreis-landkreis-alb-donau-kreis",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-alb-donau-kreis.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 55
+  },
+  {
+   "name": "Landkreis Biberach",
+   "code": "08426",
+   "slug": "kreis-landkreis-biberach",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-biberach.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 45
+  },
+  {
+   "name": "Landkreis Bodenseekreis",
+   "code": "08435",
+   "slug": "kreis-landkreis-bodenseekreis",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-bodenseekreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 23
+  },
+  {
+   "name": "Landkreis Ravensburg",
+   "code": "08436",
+   "slug": "kreis-landkreis-ravensburg",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-ravensburg.geojson",
+   "size_mb": 0.1,
+   "boundaries_count": 39
+  },
+  {
+   "name": "Landkreis Sigmaringen",
+   "code": "08437",
+   "slug": "kreis-landkreis-sigmaringen",
+   "region_slug": "land-baden-wuerttemberg",
+   "file": "boundaries/kreis-landkreis-sigmaringen.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 25
+  },
+  {
+   "name": "Ingolstadt",
+   "code": "09161",
+   "slug": "kreis-ingolstadt",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-ingolstadt.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "München",
+   "code": "09162",
+   "slug": "kreis-muenchen",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-muenchen.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Rosenheim",
+   "code": "09163",
+   "slug": "kreis-rosenheim",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-rosenheim.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Altötting",
+   "code": "09171",
+   "slug": "kreis-landkreis-altoetting",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-altoetting.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 24
+  },
+  {
+   "name": "Landkreis Berchtesgadener Land",
+   "code": "09172",
+   "slug": "kreis-landkreis-berchtesgadener-land",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-berchtesgadener-land.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 17
+  },
+  {
+   "name": "Landkreis Bad Tölz-Wolfratshausen",
+   "code": "09173",
+   "slug": "kreis-landkreis-bad-toelz-wolfratshausen",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-bad-toelz-wolfratshausen.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 23
+  },
+  {
+   "name": "Landkreis Dachau",
+   "code": "09174",
+   "slug": "kreis-landkreis-dachau",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-dachau.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 17
+  },
+  {
+   "name": "Landkreis Ebersberg",
+   "code": "09175",
+   "slug": "kreis-landkreis-ebersberg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-ebersberg.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 24
+  },
+  {
+   "name": "Landkreis Eichstätt",
+   "code": "09176",
+   "slug": "kreis-landkreis-eichstaett",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-eichstaett.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 31
+  },
+  {
+   "name": "Landkreis Erding",
+   "code": "09177",
+   "slug": "kreis-landkreis-erding",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-erding.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 26
+  },
+  {
+   "name": "Landkreis Freising",
+   "code": "09178",
+   "slug": "kreis-landkreis-freising",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-freising.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 24
+  },
+  {
+   "name": "Landkreis Fürstenfeldbruck",
+   "code": "09179",
+   "slug": "kreis-landkreis-fuerstenfeldbruck",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-fuerstenfeldbruck.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 23
+  },
+  {
+   "name": "Landkreis Garmisch-Partenkirchen",
+   "code": "09180",
+   "slug": "kreis-landkreis-garmisch-partenkirchen",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-garmisch-partenkirchen.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 23
+  },
+  {
+   "name": "Landkreis Landsberg am Lech",
+   "code": "09181",
+   "slug": "kreis-landkreis-landsberg-am-lech",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-landsberg-am-lech.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 32
+  },
+  {
+   "name": "Landkreis Miesbach",
+   "code": "09182",
+   "slug": "kreis-landkreis-miesbach",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-miesbach.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 17
+  },
+  {
+   "name": "Landkreis Mühldorf a.Inn",
+   "code": "09183",
+   "slug": "kreis-landkreis-muehldorf-a-inn",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-muehldorf-a-inn.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 32
+  },
+  {
+   "name": "Landkreis München",
+   "code": "09184",
+   "slug": "kreis-landkreis-muenchen",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-muenchen.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 32
+  },
+  {
+   "name": "Landkreis Neuburg-Schrobenhausen",
+   "code": "09185",
+   "slug": "kreis-landkreis-neuburg-schrobenhausen",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-neuburg-schrobenhausen.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 18
+  },
+  {
+   "name": "Landkreis Pfaffenhofen a.d.Ilm",
+   "code": "09186",
+   "slug": "kreis-landkreis-pfaffenhofen-a-d-ilm",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-pfaffenhofen-a-d-ilm.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 19
+  },
+  {
+   "name": "Landkreis Rosenheim",
+   "code": "09187",
+   "slug": "kreis-landkreis-rosenheim",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-rosenheim.geojson",
+   "size_mb": 0.11,
+   "boundaries_count": 48
+  },
+  {
+   "name": "Landkreis Starnberg",
+   "code": "09188",
+   "slug": "kreis-landkreis-starnberg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-starnberg.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 15
+  },
+  {
+   "name": "Landkreis Traunstein",
+   "code": "09189",
+   "slug": "kreis-landkreis-traunstein",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-traunstein.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 37
+  },
+  {
+   "name": "Landkreis Weilheim-Schongau",
+   "code": "09190",
+   "slug": "kreis-landkreis-weilheim-schongau",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-weilheim-schongau.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 34
+  },
+  {
+   "name": "Landshut",
+   "code": "09261",
+   "slug": "kreis-landshut",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landshut.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Passau",
+   "code": "09262",
+   "slug": "kreis-passau",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-passau.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Straubing",
+   "code": "09263",
+   "slug": "kreis-straubing",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-straubing.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Deggendorf",
+   "code": "09271",
+   "slug": "kreis-landkreis-deggendorf",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-deggendorf.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 26
+  },
+  {
+   "name": "Landkreis Freyung-Grafenau",
+   "code": "09272",
+   "slug": "kreis-landkreis-freyung-grafenau",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-freyung-grafenau.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 36
+  },
+  {
+   "name": "Landkreis Kelheim",
+   "code": "09273",
+   "slug": "kreis-landkreis-kelheim",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-kelheim.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 27
+  },
+  {
+   "name": "Landkreis Landshut",
+   "code": "09274",
+   "slug": "kreis-landkreis-landshut",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-landshut.geojson",
+   "size_mb": 0.1,
+   "boundaries_count": 35
+  },
+  {
+   "name": "Landkreis Passau",
+   "code": "09275",
+   "slug": "kreis-landkreis-passau",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-passau.geojson",
+   "size_mb": 0.1,
+   "boundaries_count": 38
+  },
+  {
+   "name": "Landkreis Regen",
+   "code": "09276",
+   "slug": "kreis-landkreis-regen",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-regen.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 24
+  },
+  {
+   "name": "Landkreis Rottal-Inn",
+   "code": "09277",
+   "slug": "kreis-landkreis-rottal-inn",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-rottal-inn.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 31
+  },
+  {
+   "name": "Landkreis Straubing-Bogen",
+   "code": "09278",
+   "slug": "kreis-landkreis-straubing-bogen",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-straubing-bogen.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 37
+  },
+  {
+   "name": "Landkreis Dingolfing-Landau",
+   "code": "09279",
+   "slug": "kreis-landkreis-dingolfing-landau",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-dingolfing-landau.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 15
+  },
+  {
+   "name": "Amberg",
+   "code": "09361",
+   "slug": "kreis-amberg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-amberg.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Regensburg",
+   "code": "09362",
+   "slug": "kreis-regensburg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-regensburg.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Weiden i.d.OPf.",
+   "code": "09363",
+   "slug": "kreis-weiden-i-d-opf",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-weiden-i-d-opf.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Amberg-Sulzbach",
+   "code": "09371",
+   "slug": "kreis-landkreis-amberg-sulzbach",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-amberg-sulzbach.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 28
+  },
+  {
+   "name": "Landkreis Cham",
+   "code": "09372",
+   "slug": "kreis-landkreis-cham",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-cham.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 39
+  },
+  {
+   "name": "Landkreis Neumarkt i.d.OPf.",
+   "code": "09373",
+   "slug": "kreis-landkreis-neumarkt-i-d-opf",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-neumarkt-i-d-opf.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 19
+  },
+  {
+   "name": "Landkreis Neustadt a.d.Waldnaab",
+   "code": "09374",
+   "slug": "kreis-landkreis-neustadt-a-d-waldnaab",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-neustadt-a-d-waldnaab.geojson",
+   "size_mb": 0.1,
+   "boundaries_count": 40
+  },
+  {
+   "name": "Landkreis Regensburg",
+   "code": "09375",
+   "slug": "kreis-landkreis-regensburg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-regensburg.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 43
+  },
+  {
+   "name": "Landkreis Schwandorf",
+   "code": "09376",
+   "slug": "kreis-landkreis-schwandorf",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-schwandorf.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 34
+  },
+  {
+   "name": "Landkreis Tirschenreuth",
+   "code": "09377",
+   "slug": "kreis-landkreis-tirschenreuth",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-tirschenreuth.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 26
+  },
+  {
+   "name": "Bamberg",
+   "code": "09461",
+   "slug": "kreis-bamberg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-bamberg.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Bayreuth",
+   "code": "09462",
+   "slug": "kreis-bayreuth",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-bayreuth.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Coburg",
+   "code": "09463",
+   "slug": "kreis-coburg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-coburg.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Hof",
+   "code": "09464",
+   "slug": "kreis-hof",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-hof.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Bamberg",
+   "code": "09471",
+   "slug": "kreis-landkreis-bamberg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-bamberg.geojson",
+   "size_mb": 0.1,
+   "boundaries_count": 46
+  },
+  {
+   "name": "Landkreis Bayreuth",
+   "code": "09472",
+   "slug": "kreis-landkreis-bayreuth",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-bayreuth.geojson",
+   "size_mb": 0.11,
+   "boundaries_count": 43
+  },
+  {
+   "name": "Landkreis Coburg",
+   "code": "09473",
+   "slug": "kreis-landkreis-coburg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-coburg.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 20
+  },
+  {
+   "name": "Landkreis Forchheim",
+   "code": "09474",
+   "slug": "kreis-landkreis-forchheim",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-forchheim.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 29
+  },
+  {
+   "name": "Landkreis Hof",
+   "code": "09475",
+   "slug": "kreis-landkreis-hof",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-hof.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 31
+  },
+  {
+   "name": "Landkreis Kronach",
+   "code": "09476",
+   "slug": "kreis-landkreis-kronach",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-kronach.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 20
+  },
+  {
+   "name": "Landkreis Kulmbach",
+   "code": "09477",
+   "slug": "kreis-landkreis-kulmbach",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-kulmbach.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 22
+  },
+  {
+   "name": "Landkreis Lichtenfels",
+   "code": "09478",
+   "slug": "kreis-landkreis-lichtenfels",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-lichtenfels.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 13
+  },
+  {
+   "name": "Landkreis Wunsiedel i.Fichtelgebirge",
+   "code": "09479",
+   "slug": "kreis-landkreis-wunsiedel-i-fichtelgebirge",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-wunsiedel-i-fichtelgebirge.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 26
+  },
+  {
+   "name": "Ansbach",
+   "code": "09561",
+   "slug": "kreis-ansbach",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-ansbach.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Erlangen",
+   "code": "09562",
+   "slug": "kreis-erlangen",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-erlangen.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Fürth",
+   "code": "09563",
+   "slug": "kreis-fuerth",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-fuerth.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Nürnberg",
+   "code": "09564",
+   "slug": "kreis-nuernberg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-nuernberg.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Schwabach",
+   "code": "09565",
+   "slug": "kreis-schwabach",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-schwabach.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Ansbach",
+   "code": "09571",
+   "slug": "kreis-landkreis-ansbach",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-ansbach.geojson",
+   "size_mb": 0.14,
+   "boundaries_count": 59
+  },
+  {
+   "name": "Landkreis Erlangen-Höchstadt",
+   "code": "09572",
+   "slug": "kreis-landkreis-erlangen-hoechstadt",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-erlangen-hoechstadt.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 35
+  },
+  {
+   "name": "Landkreis Fürth",
+   "code": "09573",
+   "slug": "kreis-landkreis-fuerth",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-fuerth.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 14
+  },
+  {
+   "name": "Landkreis Nürnberger Land",
+   "code": "09574",
+   "slug": "kreis-landkreis-nuernberger-land",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-nuernberger-land.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 41
+  },
+  {
+   "name": "Landkreis Neustadt a.d.Aisch-Bad Windsheim",
+   "code": "09575",
+   "slug": "kreis-landkreis-neustadt-a-d-aisch-bad-windsheim",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-neustadt-a-d-aisch-bad-windsheim.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 39
+  },
+  {
+   "name": "Landkreis Roth",
+   "code": "09576",
+   "slug": "kreis-landkreis-roth",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-roth.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 21
+  },
+  {
+   "name": "Landkreis Weißenburg-Gunzenhausen",
+   "code": "09577",
+   "slug": "kreis-landkreis-weissenburg-gunzenhausen",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-weissenburg-gunzenhausen.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 27
+  },
+  {
+   "name": "Aschaffenburg",
+   "code": "09661",
+   "slug": "kreis-aschaffenburg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-aschaffenburg.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Schweinfurt",
+   "code": "09662",
+   "slug": "kreis-schweinfurt",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-schweinfurt.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Würzburg",
+   "code": "09663",
+   "slug": "kreis-wuerzburg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-wuerzburg.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Aschaffenburg",
+   "code": "09671",
+   "slug": "kreis-landkreis-aschaffenburg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-aschaffenburg.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 40
+  },
+  {
+   "name": "Landkreis Bad Kissingen",
+   "code": "09672",
+   "slug": "kreis-landkreis-bad-kissingen",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-bad-kissingen.geojson",
+   "size_mb": 0.1,
+   "boundaries_count": 38
+  },
+  {
+   "name": "Landkreis Rhön-Grabfeld",
+   "code": "09673",
+   "slug": "kreis-landkreis-rhoen-grabfeld",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-rhoen-grabfeld.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 45
+  },
+  {
+   "name": "Landkreis Haßberge",
+   "code": "09674",
+   "slug": "kreis-landkreis-hassberge",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-hassberge.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 26
+  },
+  {
+   "name": "Landkreis Kitzingen",
+   "code": "09675",
+   "slug": "kreis-landkreis-kitzingen",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-kitzingen.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 31
+  },
+  {
+   "name": "Landkreis Miltenberg",
+   "code": "09676",
+   "slug": "kreis-landkreis-miltenberg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-miltenberg.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 34
+  },
+  {
+   "name": "Landkreis Main-Spessart",
+   "code": "09677",
+   "slug": "kreis-landkreis-main-spessart",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-main-spessart.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 50
+  },
+  {
+   "name": "Landkreis Schweinfurt",
+   "code": "09678",
+   "slug": "kreis-landkreis-schweinfurt",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-schweinfurt.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 36
+  },
+  {
+   "name": "Landkreis Würzburg",
+   "code": "09679",
+   "slug": "kreis-landkreis-wuerzburg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-wuerzburg.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 55
+  },
+  {
+   "name": "Augsburg",
+   "code": "09761",
+   "slug": "kreis-augsburg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-augsburg.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Kaufbeuren",
+   "code": "09762",
+   "slug": "kreis-kaufbeuren",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-kaufbeuren.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Kempten (Allgäu)",
+   "code": "09763",
+   "slug": "kreis-kempten-allgaeu",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-kempten-allgaeu.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Memmingen",
+   "code": "09764",
+   "slug": "kreis-memmingen",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-memmingen.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Aichach-Friedberg",
+   "code": "09771",
+   "slug": "kreis-landkreis-aichach-friedberg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-aichach-friedberg.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 24
+  },
+  {
+   "name": "Landkreis Augsburg",
+   "code": "09772",
+   "slug": "kreis-landkreis-augsburg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-augsburg.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 47
+  },
+  {
+   "name": "Landkreis Dillingen a.d.Donau",
+   "code": "09773",
+   "slug": "kreis-landkreis-dillingen-a-d-donau",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-dillingen-a-d-donau.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 27
+  },
+  {
+   "name": "Landkreis Günzburg",
+   "code": "09774",
+   "slug": "kreis-landkreis-guenzburg",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-guenzburg.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 36
+  },
+  {
+   "name": "Landkreis Neu-Ulm",
+   "code": "09775",
+   "slug": "kreis-landkreis-neu-ulm",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-neu-ulm.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 21
+  },
+  {
+   "name": "Landkreis Lindau (Bodensee)",
+   "code": "09776",
+   "slug": "kreis-landkreis-lindau-bodensee",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-lindau-bodensee.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 19
+  },
+  {
+   "name": "Landkreis Ostallgäu",
+   "code": "09777",
+   "slug": "kreis-landkreis-ostallgaeu",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-ostallgaeu.geojson",
+   "size_mb": 0.1,
+   "boundaries_count": 45
+  },
+  {
+   "name": "Landkreis Unterallgäu",
+   "code": "09778",
+   "slug": "kreis-landkreis-unterallgaeu",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-unterallgaeu.geojson",
+   "size_mb": 0.1,
+   "boundaries_count": 53
+  },
+  {
+   "name": "Landkreis Donau-Ries",
+   "code": "09779",
+   "slug": "kreis-landkreis-donau-ries",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-donau-ries.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 46
+  },
+  {
+   "name": "Landkreis Oberallgäu",
+   "code": "09780",
+   "slug": "kreis-landkreis-oberallgaeu",
+   "region_slug": "land-bayern",
+   "file": "boundaries/kreis-landkreis-oberallgaeu.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 29
+  },
+  {
+   "name": "Landkreis Regionalverband Saarbrücken",
+   "code": "10041",
+   "slug": "kreis-landkreis-regionalverband-saarbruecken",
+   "region_slug": "land-saarland",
+   "file": "boundaries/kreis-landkreis-regionalverband-saarbruecken.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 10
+  },
+  {
+   "name": "Landkreis Merzig-Wadern",
+   "code": "10042",
+   "slug": "kreis-landkreis-merzig-wadern",
+   "region_slug": "land-saarland",
+   "file": "boundaries/kreis-landkreis-merzig-wadern.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 7
+  },
+  {
+   "name": "Landkreis Neunkirchen",
+   "code": "10043",
+   "slug": "kreis-landkreis-neunkirchen",
+   "region_slug": "land-saarland",
+   "file": "boundaries/kreis-landkreis-neunkirchen.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 7
+  },
+  {
+   "name": "Landkreis Saarlouis",
+   "code": "10044",
+   "slug": "kreis-landkreis-saarlouis",
+   "region_slug": "land-saarland",
+   "file": "boundaries/kreis-landkreis-saarlouis.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 13
+  },
+  {
+   "name": "Landkreis Saarpfalz-Kreis",
+   "code": "10045",
+   "slug": "kreis-landkreis-saarpfalz-kreis",
+   "region_slug": "land-saarland",
+   "file": "boundaries/kreis-landkreis-saarpfalz-kreis.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 7
+  },
+  {
+   "name": "Landkreis St. Wendel",
+   "code": "10046",
+   "slug": "kreis-landkreis-st-wendel",
+   "region_slug": "land-saarland",
+   "file": "boundaries/kreis-landkreis-st-wendel.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 8
+  },
+  {
+   "name": "Berlin",
+   "code": "11000",
+   "slug": "kreis-berlin",
+   "region_slug": "land-berlin",
+   "file": "boundaries/kreis-berlin.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Brandenburg an der Havel",
+   "code": "12051",
+   "slug": "kreis-brandenburg-an-der-havel",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-brandenburg-an-der-havel.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Cottbus",
+   "code": "12052",
+   "slug": "kreis-cottbus",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-cottbus.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Frankfurt (Oder)",
+   "code": "12053",
+   "slug": "kreis-frankfurt-oder",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-frankfurt-oder.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Potsdam",
+   "code": "12054",
+   "slug": "kreis-potsdam",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-potsdam.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Barnim",
+   "code": "12060",
+   "slug": "kreis-landkreis-barnim",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-landkreis-barnim.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 25
+  },
+  {
+   "name": "Landkreis Dahme-Spreewald",
+   "code": "12061",
+   "slug": "kreis-landkreis-dahme-spreewald",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-landkreis-dahme-spreewald.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 37
+  },
+  {
+   "name": "Landkreis Elbe-Elster",
+   "code": "12062",
+   "slug": "kreis-landkreis-elbe-elster",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-landkreis-elbe-elster.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 33
+  },
+  {
+   "name": "Landkreis Havelland",
+   "code": "12063",
+   "slug": "kreis-landkreis-havelland",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-landkreis-havelland.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 26
+  },
+  {
+   "name": "Landkreis Märkisch-Oderland",
+   "code": "12064",
+   "slug": "kreis-landkreis-maerkisch-oderland",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-landkreis-maerkisch-oderland.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 45
+  },
+  {
+   "name": "Landkreis Oberhavel",
+   "code": "12065",
+   "slug": "kreis-landkreis-oberhavel",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-landkreis-oberhavel.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 19
+  },
+  {
+   "name": "Landkreis Oberspreewald-Lausitz",
+   "code": "12066",
+   "slug": "kreis-landkreis-oberspreewald-lausitz",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-landkreis-oberspreewald-lausitz.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 25
+  },
+  {
+   "name": "Landkreis Oder-Spree",
+   "code": "12067",
+   "slug": "kreis-landkreis-oder-spree",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-landkreis-oder-spree.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 37
+  },
+  {
+   "name": "Landkreis Ostprignitz-Ruppin",
+   "code": "12068",
+   "slug": "kreis-landkreis-ostprignitz-ruppin",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-landkreis-ostprignitz-ruppin.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 23
+  },
+  {
+   "name": "Landkreis Potsdam-Mittelmark",
+   "code": "12069",
+   "slug": "kreis-landkreis-potsdam-mittelmark",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-landkreis-potsdam-mittelmark.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 38
+  },
+  {
+   "name": "Landkreis Prignitz",
+   "code": "12070",
+   "slug": "kreis-landkreis-prignitz",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-landkreis-prignitz.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 26
+  },
+  {
+   "name": "Landkreis Spree-Neiße",
+   "code": "12071",
+   "slug": "kreis-landkreis-spree-neisse",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-landkreis-spree-neisse.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 29
+  },
+  {
+   "name": "Landkreis Teltow-Fläming",
+   "code": "12072",
+   "slug": "kreis-landkreis-teltow-flaeming",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-landkreis-teltow-flaeming.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 16
+  },
+  {
+   "name": "Landkreis Uckermark",
+   "code": "12073",
+   "slug": "kreis-landkreis-uckermark",
+   "region_slug": "land-brandenburg",
+   "file": "boundaries/kreis-landkreis-uckermark.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 30
+  },
+  {
+   "name": "Rostock",
+   "code": "13003",
+   "slug": "kreis-rostock",
+   "region_slug": "land-mecklenburg-vorpommern",
+   "file": "boundaries/kreis-rostock.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Schwerin",
+   "code": "13004",
+   "slug": "kreis-schwerin",
+   "region_slug": "land-mecklenburg-vorpommern",
+   "file": "boundaries/kreis-schwerin.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Mecklenburgische Seenplatte",
+   "code": "13071",
+   "slug": "kreis-landkreis-mecklenburgische-seenplatte",
+   "region_slug": "land-mecklenburg-vorpommern",
+   "file": "boundaries/kreis-landkreis-mecklenburgische-seenplatte.geojson",
+   "size_mb": 0.25,
+   "boundaries_count": 146
+  },
+  {
+   "name": "Landkreis Rostock",
+   "code": "13072",
+   "slug": "kreis-landkreis-rostock",
+   "region_slug": "land-mecklenburg-vorpommern",
+   "file": "boundaries/kreis-landkreis-rostock.geojson",
+   "size_mb": 0.19,
+   "boundaries_count": 112
+  },
+  {
+   "name": "Landkreis Vorpommern-Rügen",
+   "code": "13073",
+   "slug": "kreis-landkreis-vorpommern-ruegen",
+   "region_slug": "land-mecklenburg-vorpommern",
+   "file": "boundaries/kreis-landkreis-vorpommern-ruegen.geojson",
+   "size_mb": 0.19,
+   "boundaries_count": 101
+  },
+  {
+   "name": "Landkreis Nordwestmecklenburg",
+   "code": "13074",
+   "slug": "kreis-landkreis-nordwestmecklenburg",
+   "region_slug": "land-mecklenburg-vorpommern",
+   "file": "boundaries/kreis-landkreis-nordwestmecklenburg.geojson",
+   "size_mb": 0.14,
+   "boundaries_count": 83
+  },
+  {
+   "name": "Landkreis Vorpommern-Greifswald",
+   "code": "13075",
+   "slug": "kreis-landkreis-vorpommern-greifswald",
+   "region_slug": "land-mecklenburg-vorpommern",
+   "file": "boundaries/kreis-landkreis-vorpommern-greifswald.geojson",
+   "size_mb": 0.19,
+   "boundaries_count": 138
+  },
+  {
+   "name": "Landkreis Ludwigslust-Parchim",
+   "code": "13076",
+   "slug": "kreis-landkreis-ludwigslust-parchim",
+   "region_slug": "land-mecklenburg-vorpommern",
+   "file": "boundaries/kreis-landkreis-ludwigslust-parchim.geojson",
+   "size_mb": 0.22,
+   "boundaries_count": 142
+  },
+  {
+   "name": "Chemnitz",
+   "code": "14511",
+   "slug": "kreis-chemnitz",
+   "region_slug": "land-sachsen",
+   "file": "boundaries/kreis-chemnitz.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Erzgebirgskreis",
+   "code": "14521",
+   "slug": "kreis-landkreis-erzgebirgskreis",
+   "region_slug": "land-sachsen",
+   "file": "boundaries/kreis-landkreis-erzgebirgskreis.geojson",
+   "size_mb": 0.11,
+   "boundaries_count": 59
+  },
+  {
+   "name": "Landkreis Mittelsachsen",
+   "code": "14522",
+   "slug": "kreis-landkreis-mittelsachsen",
+   "region_slug": "land-sachsen",
+   "file": "boundaries/kreis-landkreis-mittelsachsen.geojson",
+   "size_mb": 0.11,
+   "boundaries_count": 52
+  },
+  {
+   "name": "Landkreis Vogtlandkreis",
+   "code": "14523",
+   "slug": "kreis-landkreis-vogtlandkreis",
+   "region_slug": "land-sachsen",
+   "file": "boundaries/kreis-landkreis-vogtlandkreis.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 37
+  },
+  {
+   "name": "Landkreis Zwickau",
+   "code": "14524",
+   "slug": "kreis-landkreis-zwickau",
+   "region_slug": "land-sachsen",
+   "file": "boundaries/kreis-landkreis-zwickau.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 33
+  },
+  {
+   "name": "Dresden",
+   "code": "14612",
+   "slug": "kreis-dresden",
+   "region_slug": "land-sachsen",
+   "file": "boundaries/kreis-dresden.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Bautzen",
+   "code": "14625",
+   "slug": "kreis-landkreis-bautzen",
+   "region_slug": "land-sachsen",
+   "file": "boundaries/kreis-landkreis-bautzen.geojson",
+   "size_mb": 0.11,
+   "boundaries_count": 57
+  },
+  {
+   "name": "Landkreis Görlitz",
+   "code": "14626",
+   "slug": "kreis-landkreis-goerlitz",
+   "region_slug": "land-sachsen",
+   "file": "boundaries/kreis-landkreis-goerlitz.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 53
+  },
+  {
+   "name": "Landkreis Meißen",
+   "code": "14627",
+   "slug": "kreis-landkreis-meissen",
+   "region_slug": "land-sachsen",
+   "file": "boundaries/kreis-landkreis-meissen.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 28
+  },
+  {
+   "name": "Landkreis Sächsische Schweiz-Osterzgebirge",
+   "code": "14628",
+   "slug": "kreis-landkreis-saechsische-schweiz-osterzgebirge",
+   "region_slug": "land-sachsen",
+   "file": "boundaries/kreis-landkreis-saechsische-schweiz-osterzgebirge.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 36
+  },
+  {
+   "name": "Leipzig",
+   "code": "14713",
+   "slug": "kreis-leipzig",
+   "region_slug": "land-sachsen",
+   "file": "boundaries/kreis-leipzig.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Leipzig",
+   "code": "14729",
+   "slug": "kreis-landkreis-leipzig",
+   "region_slug": "land-sachsen",
+   "file": "boundaries/kreis-landkreis-leipzig.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 30
+  },
+  {
+   "name": "Landkreis Nordsachsen",
+   "code": "14730",
+   "slug": "kreis-landkreis-nordsachsen",
+   "region_slug": "land-sachsen",
+   "file": "boundaries/kreis-landkreis-nordsachsen.geojson",
+   "size_mb": 0.08,
+   "boundaries_count": 30
+  },
+  {
+   "name": "Dessau-Roßlau",
+   "code": "15001",
+   "slug": "kreis-dessau-rosslau",
+   "region_slug": "land-sachsen-anhalt",
+   "file": "boundaries/kreis-dessau-rosslau.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Halle (Saale)",
+   "code": "15002",
+   "slug": "kreis-halle-saale",
+   "region_slug": "land-sachsen-anhalt",
+   "file": "boundaries/kreis-halle-saale.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Magdeburg",
+   "code": "15003",
+   "slug": "kreis-magdeburg",
+   "region_slug": "land-sachsen-anhalt",
+   "file": "boundaries/kreis-magdeburg.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Altmarkkreis Salzwedel",
+   "code": "15081",
+   "slug": "kreis-landkreis-altmarkkreis-salzwedel",
+   "region_slug": "land-sachsen-anhalt",
+   "file": "boundaries/kreis-landkreis-altmarkkreis-salzwedel.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 13
+  },
+  {
+   "name": "Landkreis Anhalt-Bitterfeld",
+   "code": "15082",
+   "slug": "kreis-landkreis-anhalt-bitterfeld",
+   "region_slug": "land-sachsen-anhalt",
+   "file": "boundaries/kreis-landkreis-anhalt-bitterfeld.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 10
+  },
+  {
+   "name": "Landkreis Börde",
+   "code": "15083",
+   "slug": "kreis-landkreis-boerde",
+   "region_slug": "land-sachsen-anhalt",
+   "file": "boundaries/kreis-landkreis-boerde.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 34
+  },
+  {
+   "name": "Landkreis Burgenlandkreis",
+   "code": "15084",
+   "slug": "kreis-landkreis-burgenlandkreis",
+   "region_slug": "land-sachsen-anhalt",
+   "file": "boundaries/kreis-landkreis-burgenlandkreis.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 33
+  },
+  {
+   "name": "Landkreis Harz",
+   "code": "15085",
+   "slug": "kreis-landkreis-harz",
+   "region_slug": "land-sachsen-anhalt",
+   "file": "boundaries/kreis-landkreis-harz.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 20
+  },
+  {
+   "name": "Landkreis Jerichower Land",
+   "code": "15086",
+   "slug": "kreis-landkreis-jerichower-land",
+   "region_slug": "land-sachsen-anhalt",
+   "file": "boundaries/kreis-landkreis-jerichower-land.geojson",
+   "size_mb": 0.03,
+   "boundaries_count": 8
+  },
+  {
+   "name": "Landkreis Mansfeld-Südharz",
+   "code": "15087",
+   "slug": "kreis-landkreis-mansfeld-suedharz",
+   "region_slug": "land-sachsen-anhalt",
+   "file": "boundaries/kreis-landkreis-mansfeld-suedharz.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 22
+  },
+  {
+   "name": "Landkreis Saalekreis",
+   "code": "15088",
+   "slug": "kreis-landkreis-saalekreis",
+   "region_slug": "land-sachsen-anhalt",
+   "file": "boundaries/kreis-landkreis-saalekreis.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 20
+  },
+  {
+   "name": "Landkreis Salzlandkreis",
+   "code": "15089",
+   "slug": "kreis-landkreis-salzlandkreis",
+   "region_slug": "land-sachsen-anhalt",
+   "file": "boundaries/kreis-landkreis-salzlandkreis.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 21
+  },
+  {
+   "name": "Landkreis Stendal",
+   "code": "15090",
+   "slug": "kreis-landkreis-stendal",
+   "region_slug": "land-sachsen-anhalt",
+   "file": "boundaries/kreis-landkreis-stendal.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 25
+  },
+  {
+   "name": "Landkreis Wittenberg",
+   "code": "15091",
+   "slug": "kreis-landkreis-wittenberg",
+   "region_slug": "land-sachsen-anhalt",
+   "file": "boundaries/kreis-landkreis-wittenberg.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 9
+  },
+  {
+   "name": "Erfurt",
+   "code": "16051",
+   "slug": "kreis-erfurt",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-erfurt.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Gera",
+   "code": "16052",
+   "slug": "kreis-gera",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-gera.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Jena",
+   "code": "16053",
+   "slug": "kreis-jena",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-jena.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Suhl",
+   "code": "16054",
+   "slug": "kreis-suhl",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-suhl.geojson",
+   "size_mb": 0.01,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Weimar",
+   "code": "16055",
+   "slug": "kreis-weimar",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-weimar.geojson",
+   "size_mb": 0.0,
+   "boundaries_count": 1
+  },
+  {
+   "name": "Landkreis Eichsfeld",
+   "code": "16061",
+   "slug": "kreis-landkreis-eichsfeld",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-eichsfeld.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 56
+  },
+  {
+   "name": "Landkreis Nordhausen",
+   "code": "16062",
+   "slug": "kreis-landkreis-nordhausen",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-nordhausen.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 15
+  },
+  {
+   "name": "Landkreis Wartburgkreis",
+   "code": "16063",
+   "slug": "kreis-landkreis-wartburgkreis",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-wartburgkreis.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 30
+  },
+  {
+   "name": "Landkreis Unstrut-Hainich-Kreis",
+   "code": "16064",
+   "slug": "kreis-landkreis-unstrut-hainich-kreis",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-unstrut-hainich-kreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 25
+  },
+  {
+   "name": "Landkreis Kyffhäuserkreis",
+   "code": "16065",
+   "slug": "kreis-landkreis-kyffhaeuserkreis",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-kyffhaeuserkreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 28
+  },
+  {
+   "name": "Landkreis Schmalkalden-Meiningen",
+   "code": "16066",
+   "slug": "kreis-landkreis-schmalkalden-meiningen",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-schmalkalden-meiningen.geojson",
+   "size_mb": 0.07,
+   "boundaries_count": 38
+  },
+  {
+   "name": "Landkreis Gotha",
+   "code": "16067",
+   "slug": "kreis-landkreis-gotha",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-gotha.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 29
+  },
+  {
+   "name": "Landkreis Sömmerda",
+   "code": "16068",
+   "slug": "kreis-landkreis-soemmerda",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-soemmerda.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 37
+  },
+  {
+   "name": "Landkreis Hildburghausen",
+   "code": "16069",
+   "slug": "kreis-landkreis-hildburghausen",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-hildburghausen.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 32
+  },
+  {
+   "name": "Landkreis Ilm-Kreis",
+   "code": "16070",
+   "slug": "kreis-landkreis-ilm-kreis",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-ilm-kreis.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 16
+  },
+  {
+   "name": "Landkreis Weimarer Land",
+   "code": "16071",
+   "slug": "kreis-landkreis-weimarer-land",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-weimarer-land.geojson",
+   "size_mb": 0.05,
+   "boundaries_count": 38
+  },
+  {
+   "name": "Landkreis Sonneberg",
+   "code": "16072",
+   "slug": "kreis-landkreis-sonneberg",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-sonneberg.geojson",
+   "size_mb": 0.02,
+   "boundaries_count": 8
+  },
+  {
+   "name": "Landkreis Saalfeld-Rudolstadt",
+   "code": "16073",
+   "slug": "kreis-landkreis-saalfeld-rudolstadt",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-saalfeld-rudolstadt.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 26
+  },
+  {
+   "name": "Landkreis Saale-Holzland-Kreis",
+   "code": "16074",
+   "slug": "kreis-landkreis-saale-holzland-kreis",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-saale-holzland-kreis.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 91
+  },
+  {
+   "name": "Landkreis Saale-Orla-Kreis",
+   "code": "16075",
+   "slug": "kreis-landkreis-saale-orla-kreis",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-saale-orla-kreis.geojson",
+   "size_mb": 0.09,
+   "boundaries_count": 59
+  },
+  {
+   "name": "Landkreis Greiz",
+   "code": "16076",
+   "slug": "kreis-landkreis-greiz",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-greiz.geojson",
+   "size_mb": 0.06,
+   "boundaries_count": 42
+  },
+  {
+   "name": "Landkreis Altenburger Land",
+   "code": "16077",
+   "slug": "kreis-landkreis-altenburger-land",
+   "region_slug": "land-thueringen",
+   "file": "boundaries/kreis-landkreis-altenburger-land.geojson",
+   "size_mb": 0.04,
+   "boundaries_count": 30
+  }
+ ]
+}

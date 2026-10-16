@@ -1,0 +1,14 @@
+📡 GLS Germania (API della mappa gls-group.eu, griglia adattiva)
+   GLS: 277 initial cells of 40 km
+   GLS: 277 calls, 27306 raw results, 40 cells split
+   GLS: 317 calls, 33356 raw results, 8 cells split
+   GLS: 325 calls in total
+   risposte per numero di punti (fasce da 100): {0: 213, 100: 73, 200: 18, 300: 9, 400: 6, 500: 1, 600: 2, 700: 2, 800: 1}
+   tipi: {'SHOPINSHOP': 20777, 'LOCKER': 6334, 'SHOP': 127}
+
+📦 GLS: 11996 points
+   pickup_point       9279
+   locker             2717
+💾 Saved to: /home/runner/work/paketstationen-deutschland/paketstationen-deutschland/data/gls_all_locations.json
+   File size: 3145.3 KB
+   Locations: 11996

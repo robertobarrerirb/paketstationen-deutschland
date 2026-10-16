@@ -1,0 +1,9 @@
+📡 DPD Pickup via DPD Pickup API (country=276)
+   11545 points received (API count: 11545)
+
+📦 DPD: 11545 points
+   pickup_point       8963
+   locker             2582
+💾 Saved to: /home/runner/work/paketstationen-deutschland/paketstationen-deutschland/data/dpd_all_locations.json
+   File size: 4710.5 KB
+   Locations: 11545

@@ -1,0 +1,59 @@
+📡 OpenStreetMap / Overpass: every network (fallback)
+   → https://overpass-api.de/api/interpreter (attempt 1)
+   28007 OSM elements
+   ⏭  DHL: cache da fonte diretta (api-adaptive-grid), OSM non la sovrascrive
+   ⏭  DPD: cache da fonte diretta (api-getAll), OSM non la sovrascrive
+   ⏭  GLS: cache da fonte diretta (api-adaptive-grid), OSM non la sovrascrive
+   ⏭  FedEx: cache da fonte diretta (griglia-raggio), OSM non la sovrascrive
+
+📦 Hermes: 2666 points
+   pickup_point       2641
+   locker               25
+💾 Saved to: /home/runner/work/paketstationen-deutschland/paketstationen-deutschland/data/hermes_all_locations.json
+   File size: 915.0 KB
+   Locations: 2666
+
+📦 UPS: 274 points
+   pickup_point        207
+   locker               67
+💾 Saved to: /home/runner/work/paketstationen-deutschland/paketstationen-deutschland/data/ups_all_locations.json
+   File size: 92.9 KB
+   Locations: 274
+
+📦 Amazon: 1499 points
+   locker             1497
+   pickup_point          2
+💾 Saved to: /home/runner/work/paketstationen-deutschland/paketstationen-deutschland/data/amazon_all_locations.json
+   File size: 420.0 KB
+   Locations: 1499
+
+📦 myflexbox: 347 points
+   locker              347
+💾 Saved to: /home/runner/work/paketstationen-deutschland/paketstationen-deutschland/data/myflexbox_all_locations.json
+   File size: 105.7 KB
+   Locations: 347
+
+📦 DeinFach: 314 points
+   locker              314
+💾 Saved to: /home/runner/work/paketstationen-deutschland/paketstationen-deutschland/data/deinfach_all_locations.json
+   File size: 95.3 KB
+   Locations: 314
+
+📦 MBE: 59 points
+   pickup_point         59
+💾 Saved to: /home/runner/work/paketstationen-deutschland/paketstationen-deutschland/data/mbe_all_locations.json
+   File size: 21.3 KB
+   Locations: 59
+
+📦 NovaPost: 15 points
+   post_office          15
+💾 Saved to: /home/runner/work/paketstationen-deutschland/paketstationen-deutschland/data/novapost_all_locations.json
+   File size: 5.3 KB
+   Locations: 15
+
+📦 Parcelly: 0 points
+
+WARNING: Parcelly fetched 0 locations.
+No existing cache to preserve.
+
+⚠️  caches not updated (anomaly): Parcelly

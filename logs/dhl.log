@@ -1,0 +1,18 @@
+🔎 DHL Parcel API su Bonn: 50 risultati, 50 tedeschi
+📡 DHL Germania dall'API pubblica di DHL Parcel (griglia adattiva, max 50 per chiamata)
+   DHL: 717 initial cells of 24 km
+   DHL: 717 calls, 28213 raw results, 1636 cells split
+   DHL: 2353 calls, 69246 raw results, 1296 cells split
+   DHL: 3649 calls, 99549 raw results, 884 cells split
+   DHL: 4533 calls, 119672 raw results, 352 cells split
+   DHL: 4885 calls, 126258 raw results, 4 cells split
+   DHL: 4889 calls in total
+   tipi: {'post_office': 12115, 'pickup_point': 9702, 'locker': 19029}
+
+📦 DHL: 40846 points
+   locker            19029
+   post_office       12115
+   pickup_point       9702
+💾 Saved to: /home/runner/work/paketstationen-deutschland/paketstationen-deutschland/data/dhl_all_locations.json
+   File size: 16602.7 KB
+   Locations: 40846
