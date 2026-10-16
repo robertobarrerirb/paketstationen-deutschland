@@ -428,6 +428,8 @@ def save_checkpoint(found, pending):
 def cache_age_days():
     try:
         meta = json.loads(CACHE.read_text(encoding="utf-8")).get("metadata") or {}
+        if meta.get("method") == "osm-overpass":
+            return None  # an OpenStreetMap stand-in, not a crawl of amazon.de
         fetched = datetime.fromisoformat(meta["fetched_at"].replace("Z", "+00:00"))
         return (datetime.now(fetched.tzinfo) - fetched).total_seconds() / 86400
     except (OSError, ValueError, KeyError):
