@@ -1,0 +1,9 @@
+📡 myflexbox (API pubblica della mappa myflexbox.com, una chiamata)
+   2063 stazioni ricevute, stato: {'LIVE': 2018, 'TERMINATING': 13, 'IN_MAINTENANCE': 32}
+
+📦 myflexbox: 2050 points
+   locker             2050
+  ℹ️  myflexbox: 490.8% increase (347 → 2050)
+💾 Saved to: /home/runner/work/paketstationen-deutschland/paketstationen-deutschland/data/myflexbox_all_locations.json
+   File size: 838.8 KB
+   Locations: 2050
