@@ -59,9 +59,13 @@ MIN_CELL_KM = 0.25
 # can be missing while the 20th is at 2.3 km. So a cell only counts as
 # complete when its corners lie within this share of the 20th point's distance.
 TRUST = 0.5
-# amazon.it (Italian version) answered 503 at 6 parallel; 3 with a short pause stay under the limit
+# amazon.it (Italian version) answered 503 at 6 parallel. amazon.de refused 1 call in 6 at
+# 3 workers with a fixed 0.3 s pause, and every refusal paused all workers for 5-80 s, so
+# pauses ate most of the time (52 calls/min). Now a shared pacer spaces the calls and adapts:
+# slower after a refusal, a little faster after each success, settling just under the limit.
 WORKERS = 3
-REQUEST_DELAY = 0.3
+PACE_START, PACE_MIN, PACE_MAX = 0.6, 0.25, 8.0  # seconds between two calls, all workers together
+PACE_SLOWER, PACE_FASTER = 1.5, 0.985
 MAX_ATTEMPTS = 6
 RETRY_ROUNDS = 3
 RETRY_PAUSE = 120  # s, times the round
@@ -85,6 +89,34 @@ def out_of_time():
     return bool(MAX_MINUTES) and (time.time() - _START) / 60 > MAX_MINUTES
 
 
+class Pacer:
+    """One call every `interval` seconds across all workers (AIMD: x1.5 on a refusal, -1.5% per success)."""
+
+    def __init__(self):
+        self.interval = PACE_START
+        self.next_slot = 0.0
+        self.lock = threading.Lock()
+
+    def wait(self):
+        with self.lock:
+            now = time.time()
+            slot = max(now, self.next_slot)
+            self.next_slot = slot + self.interval
+        time.sleep(max(0.0, slot - time.time()))
+
+    def success(self):
+        with self.lock:
+            self.interval = max(PACE_MIN, self.interval * PACE_FASTER)
+
+    def refused(self, pause=0.0):
+        with self.lock:
+            self.interval = min(PACE_MAX, self.interval * PACE_SLOWER)
+            self.next_slot = max(self.next_slot, time.time() + pause)
+
+
+PACER = Pacer()
+
+
 def note_error(kind, detail):
     with _stats_lock:
         STATS["errors"][kind] = STATS["errors"].get(kind, 0) + 1
@@ -99,7 +131,8 @@ def progress_reporter(found_ref):
             with _stats_lock:
                 el = (time.time() - _START) / 60
                 print(f"   ⏱ {el:.0f} min · {STATS['calls']} chiamate ({STATS['calls'] / max(el, 0.01):.0f}/min) · "
-                      f"ok {STATS['ok']} · errori {STATS['errors']} · pause {STATS['pauses']} · punti {len(found_ref)}",
+                      f"ok {STATS['ok']} · errori {STATS['errors']} · pause {STATS['pauses']} · punti {len(found_ref)} · "
+                      f"ritmo {60 / PACER.interval:.0f}/min · celle da cercare {STATS.get('todo', '?')}",
                       flush=True)
     threading.Thread(target=loop, daemon=True).start()
 
@@ -219,10 +252,30 @@ def browser_session():
     return cookies, USER_AGENT, client_id
 
 
+_LAND = None
+
+
+def on_land(cell):
+    """Does the (s, w, n, e) cell touch Germany (outline buffered ~300 m for the coast)?"""
+    global _LAND
+    if _LAND is None:
+        from shapely import make_valid
+        from shapely.prepared import prep
+        if not OUTLINE_FILE.exists():
+            _LAND = False
+        else:
+            with open(OUTLINE_FILE, encoding="utf-8") as f:
+                _LAND = prep(make_valid(shape(json.load(f)["features"][0]["geometry"])).buffer(0.004))
+    if _LAND is False:
+        return True
+    s, w, n, e = cell
+    return _LAND.intersects(box(w, s, e, n))
+
+
 def country_cells():
-    """16 km cells (as lat/lon boxes) that touch French land."""
+    """16 km cells (as lat/lon boxes) that touch German land."""
     if not OUTLINE_FILE.exists():
-        raise SystemExit("❌ Esegui prima scripts/prepare_territorio.py")
+        raise SystemExit("❌ Manca data/territorium/deutschland_outline.geojson: fai git pull")
     with open(OUTLINE_FILE, encoding="utf-8") as f:
         outline = shape(json.load(f)["features"][0]["geometry"])
     polygons = list(getattr(outline, "geoms", [outline]))
@@ -269,9 +322,7 @@ class Fetcher:
         for attempt in range(MAX_ATTEMPTS):
             if out_of_time():
                 raise RuntimeError("tempo scaduto")
-            # A refusal pauses every worker, not just the one that got it
-            wait = self.pause_until - time.time()
-            time.sleep(max(wait, 0) + REQUEST_DELAY)
+            PACER.wait()
             with _stats_lock:
                 STATS["calls"] += 1
             try:
@@ -290,6 +341,7 @@ class Fetcher:
                     raise ValueError(data.get("exceptionClassName") or "isErrored")
                 with _stats_lock:
                     STATS["ok"] += 1
+                PACER.success()
                 return data.get("locationList") or []
             except (requests.RequestException, ValueError) as e:
                 if isinstance(e, ValueError) and str(e) and "Expecting" not in str(e):
@@ -298,9 +350,9 @@ class Fetcher:
                     note_error(type(e).__name__, str(e))
                 if attempt == MAX_ATTEMPTS - 1:
                     raise RuntimeError(f"{lat:.4f},{lon:.4f}: {e}")
-                # 5, 10, 20, 40, 80 s: a 503 is Amazon's rate limit, it needs a real pause
-                with self.lock:
-                    self.pause_until = max(self.pause_until, time.time() + 5 * 2 ** attempt)
+                # A 503 is Amazon's rate limit: everyone slows down; a repeated refusal of the
+                # same call also waits a little (0, 4, 8, 16, 32 s) before trying again
+                PACER.refused(pause=0 if attempt == 0 else 2 * 2 ** attempt)
                 with _stats_lock:
                     STATS["pauses"] += 1
 
@@ -349,7 +401,9 @@ def crawl(fetcher, cells, found=None):
         if reach * TRUST >= corner or corner < MIN_CELL_KM:
             return
         splits += 1
-        next_cells += [(s, w, clat, clon), (s, clon, clat, e), (clat, w, n, clon), (clat, clon, n, e)]
+        # Quarters with no German land (sea, the other side of a border) hold no German point
+        next_cells += [c for c in ((s, w, clat, clon), (s, clon, clat, e), (clat, w, n, clon), (clat, clon, n, e))
+                       if on_land(c)]
 
     def run(batch, next_cells, failed):
         """Search `batch`; answered cells are used at once, refused ones go to `failed`."""
@@ -360,6 +414,7 @@ def crawl(fetcher, cells, found=None):
             for index, (cell, locations) in enumerate(pool.map(fetcher.try_search, todo)):
                 calls += 1
                 todo[index] = None
+                STATS["todo"] = len(todo) - index - 1 + len(next_cells) + len(failed)
                 if locations is None:
                     failed.append(cell)
                 else:
@@ -370,6 +425,7 @@ def crawl(fetcher, cells, found=None):
         pool.shutdown(wait=True)
 
     while cells:
+        STATS["todo"] = len(cells)
         if out_of_time():
             print(f"   ⏹ limite di {MAX_MINUTES:.0f} min raggiunto: {len(cells)} celle da riprendere", flush=True)
             return found, calls, splits, cells
