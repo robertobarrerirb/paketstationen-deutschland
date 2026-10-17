@@ -76,7 +76,10 @@ cd webapp && npm install && npm run dev   # port 3002 (Italy 3000, France 3001)
   another network's locker unless that listing carries the owner's brand (DeinFach stations
   are Deutsche Post's: they may join the "Packstation 6xx" DHL lists there); open stations
   (myflexbox, DeinFach) may be listed by several networks. A Postfiliale is a partner
-  shop in Germany, so post offices are not kept apart. "Str." / "Straße" are normalised to one
+  shop in Germany, so post offices are not kept apart. amazon.de also offers other networks'
+  points (DHL ~38,000, Hermes, DPD, myflexbox: ~47,500 of its ~52,000), listed as "DHL Postfiliale 603"
+  with that label as address: they join the named network's listing within 30 m (`amazon_3p`).
+  As in France, they stay counted under Amazon too. "Str." / "Straße" are normalised to one
   street word; German addresses put the number last ("Hauptstraße 12a").
   Position of a shared place (`place_positions` in `build_data.py`): where most listings with a
   street address agree (within 30 m), at their mean; the Gemeinde is assigned afterwards.

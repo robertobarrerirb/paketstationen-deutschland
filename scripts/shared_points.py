@@ -77,6 +77,11 @@ STREET_STOP = {"str", "strasse", "platz", "pl", "weg", "allee", "gasse", "damm",
                "am", "an", "auf", "der", "die", "das", "dem", "den", "des", "im", "in", "zum", "zur", "von",
                "vom", "bei", "hinter", "vor", "unter", "ober", "alte", "alter", "neue", "neuer", "st", "sankt",
                "gewerbegebiet", "industriegebiet", "einkaufszentrum", "center", "ot", "ortsteil"}
+# amazon.de offers points of other networks under their label: "DHL Postfiliale 603",
+# "DHL Packstation 103", "Hermes PaketShop ...", with the label also in the address line
+AMAZON_3P_NAME = re.compile(r"^(dhl|hermes|dpd|gls|ups|myflexbox)\b", re.I)
+AMAZON_3P_NETWORKS = {"dhl": "DHL", "hermes": "Hermes", "dpd": "DPD", "gls": "GLS", "ups": "UPS", "myflexbox": "myflexbox"}
+AMAZON_3P_LINE = re.compile(r"^\s*(postfiliale|packstation|poststation|paketshop|paketstation|filiale)\b", re.I)
 GERMAN = str.maketrans({"ä": "ae", "ö": "oe", "ü": "ue", "Ä": "Ae", "Ö": "Oe", "Ü": "Ue", "ß": "ss"})
 
 
@@ -252,8 +257,20 @@ def shared_groups(x, y, carriers, is_locker, names, streets, numbers, keys=None,
 
     def amazon_name_in_street(k):
         # Amazon Counter listings sometimes carry the shop name in the address line
-        # and no house number: the line is then a name, not a street
-        return carriers[k] == "Amazon" and not re.search(r"\d", str(streets[k]))
+        # and no house number: the line is then a name, not a street. Points of other
+        # networks that amazon.de offers carry their own label there instead of an
+        # address ("Postfiliale 603", "Packstation 103"): no street either.
+        if carriers[k] != "Amazon":
+            return False
+        line = str(streets[k])
+        return not re.search(r"\d", line) or bool(AMAZON_3P_LINE.match(line))
+
+    def amazon_3p(k):
+        """The network of a point of another network that Amazon offers ("DHL Postfiliale 603"), else None."""
+        if carriers[k] != "Amazon":
+            return None
+        found = AMAZON_3P_NAME.match(str(names[k]))
+        return AMAZON_3P_NETWORKS.get(found.group(1).lower()) if found else None
 
     def nt(k):
         if k not in name_cache:
@@ -293,6 +310,10 @@ def shared_groups(x, y, carriers, is_locker, names, streets, numbers, keys=None,
             limit = ADDRESS_M
         elif name or street:
             limit = NEAR_M
+        elif amazon_3p(a) == carriers[b] or amazon_3p(b) == carriers[a]:
+            # amazon.de's listing of a DHL / Hermes / DPD point: no address, no shop name,
+            # only the network and its position, almost always the network's own one
+            limit = SAME_SPOT_M
         else:
             continue
         if d <= limit:
