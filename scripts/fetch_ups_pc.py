@@ -166,10 +166,12 @@ def summary(location):
 
 
 def is_locker_name(name):
-    """UPS also lists other networks' lockers ("myflexbox Paketstation ...", "Packstation"),
+    """UPS also lists other networks' lockers ("myflexbox Paketstation ...", "Packstation",
+    "Deinfach 615 In 58135"),
     so "paketstation" counts as well as "locker"."""
     name = str(name or "").lower()
-    return "locker" in name or "paketstation" in name or "packstation" in name or "flexbox" in name
+    return ("locker" in name or "paketstation" in name or "packstation" in name or "flexbox" in name
+            or "deinfach" in name)  # DeinFach stations: "Deinfach 615 In 58135"
 
 
 def to_record(point):
