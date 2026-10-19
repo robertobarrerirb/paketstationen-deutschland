@@ -62,6 +62,12 @@ Packstation DHL e gli Amazon Locker non si uniscono mai ai locker di altre reti;
 negozio partner, quindi può condividere il luogo con le altre reti. Correzioni manuali in
 `data/punti_condivisi_correzioni.json`.
 
+**L'indirizzo vale più delle coordinate**: ogni punto con via e numero civico viene spostato sullo
+stesso numero della stessa via in **OpenStreetMap**, nella stessa Gemeinde ed entro 3 km
+(`scripts/osm_indirizzi.py` → `data/posizioni_indirizzi.json`; workflow **Posizioni dagli indirizzi
+(OSM)**, mensile il giorno 3). Le coordinate ufficiali degli edifici (BKG HK-DE) non sono open data
+per tutta la Germania, solo per alcuni Länder.
+
 **Territorio**: ~10.800 Gemeinden, ~400 Kreise (Landkreise e kreisfreie Städte), 16 Länder, dai
 confini BKG **VG250-EW** (stato al 31.12, con gli abitanti delle statistiche ufficiali; © GeoBasis-DE /
 BKG, dl-de/by-2-0), solo la parte di terra. **Popolazione servita** (abitanti entro 5 minuti a piedi,
@@ -172,7 +178,7 @@ paketstationen-deutschland/
 │   ├── build_data.py            # join spaziale → tutti i file della webapp
 │   └── build_copertura.py       # dati dell'analisi di copertura
 ├── data/                        # cache delle reti (committate), territorium/ (generata)
-├── .github/workflows/           # update-data.yml (mensile), rebuild.yml, popolazione.yml
+├── .github/workflows/           # update-data.yml (mensile), rebuild.yml, popolazione.yml, indirizzi.yml
 └── webapp/
     ├── lib/i18n.tsx, lib/translate.ts, lib/messages/{de,it,en}.ts   # le tre lingue
     ├── lib/territory.ts         # slug: 'deutschland', 'land-*', 'kreis-*', Gemeinden

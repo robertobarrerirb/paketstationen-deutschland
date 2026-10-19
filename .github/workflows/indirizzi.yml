@@ -1,0 +1,63 @@
+name: Posizioni dagli indirizzi (OSM)
+
+# L'indirizzo vale più delle coordinate della rete: per ogni punto con via e numero
+# civico si cerca lo stesso numero in OpenStreetMap (scripts/osm_indirizzi.py) e il
+# risultato (data/posizioni_indirizzi.json) lo usa scripts/build_data.py.
+# Una volta al mese (giorno 3), il giorno prima dell'aggiornamento dei dati; ~40-60 minuti.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 2 3 * *'
+
+permissions:
+  contents: write
+
+jobs:
+  indirizzi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - run: sudo apt-get update -q && sudo apt-get install -y -q osmium-tool
+
+      - name: Estratto OpenStreetMap della Germania (Geofabrik)
+        run: |
+          mkdir -p /tmp/osm logs
+          df -h /tmp
+          curl -sSfL --retry 3 -o /tmp/osm/germany.osm.pbf https://download.geofabrik.de/europe/germany-latest.osm.pbf
+          ls -lh /tmp/osm/germany.osm.pbf
+          osmium tags-filter /tmp/osm/germany.osm.pbf nwr/addr:housenumber -o /tmp/osm/addr.osm.pbf
+          rm /tmp/osm/germany.osm.pbf
+          osmium export /tmp/osm/addr.osm.pbf -c scripts/osm_indirizzi.json -f geojsonseq --geometry-types=point,polygon -o /tmp/osm/addr.geojsonseq
+          rm /tmp/osm/addr.osm.pbf
+          ls -lh /tmp/osm
+
+      - run: python scripts/prepare_territorium.py
+      - name: Posizioni dagli indirizzi
+        run: python -u scripts/osm_indirizzi.py /tmp/osm/addr.geojsonseq 2>&1 | tee logs/indirizzi.log
+
+      - run: python scripts/build_data.py
+      - run: |
+          if [ -f data/popolazione_zensus_100m.csv.gz ]; then python scripts/build_copertura.py; fi
+
+      - name: Commit e push
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add data/posizioni_indirizzi.json webapp/public/municipalities.json webapp/public/data
+          git add -f logs/indirizzi.log
+          git diff --staged --quiet && exit 0
+          git commit -q -m "🤖 Posizioni dagli indirizzi (OSM) - $(date +'%Y-%m-%d %H:%M UTC')"
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep $((attempt * 15))
+          done
+          exit 1

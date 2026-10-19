@@ -84,8 +84,12 @@ cd webapp && npm install && npm run dev   # port 3002 (Italy 3000, France 3001)
   street word; German addresses put the number last ("Hauptstraße 12a").
   Position of a shared place (`place_positions` in `build_data.py`): where most listings with a
   street address agree (within 30 m), at their mean; the Gemeinde is assigned afterwards.
-  "Address beats coordinates" (Roberto's rule) runs only when `data/posizioni_indirizzi.json`
-  exists: no German address source yet (the Italian version uses OSM, `osm_indirizzi.py`).
+  Address beats coordinates (Roberto's rule): before that, every listing with a real street address
+  and a house number (not a network label such as amazon.de's "DHL Packstation 107") is moved to the
+  same number in OpenStreetMap, same Gemeinde (under the coordinates or by town name), within 3 km
+  (`scripts/osm_indirizzi.py` → `data/posizioni_indirizzi.json`, workflow "Posizioni dagli
+  indirizzi (OSM)", monthly on day 3; applied by `address_positions()`). Official house
+  coordinates (BKG HK-DE) are not open nationwide, only in some Länder.
 - **puntType**: `locker` | `pickup_point` | `post_office`; only `locker` is a locker.
 - **Opening hours**: `{mon, tue, wed, thu, fri, sat, sun}` with `"HH:MM - HH:MM[, ...]"` or `"closed"`.
 - GeoJSON property names are inherited from the Dutch project (`locatieNaam`, `vervoerder`,

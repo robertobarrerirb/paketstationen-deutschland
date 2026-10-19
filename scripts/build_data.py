@@ -149,8 +149,8 @@ def load_caches():
 def address_positions(points: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
     """
     The address wins over the network's coordinates (Roberto, October 2026): listings whose
-    street and house number were found in an address base (data/posizioni_indirizzi.json; not yet
-    built for Germany: the Italian version uses OpenStreetMap, scripts/osm_indirizzi.py) are placed there.
+    street and house number were found in OpenStreetMap (data/posizioni_indirizzi.json, from
+    scripts/osm_indirizzi.py, workflow "Posizioni dagli indirizzi (OSM)") are placed there.
     """
     path = DATA_DIR / "posizioni_indirizzi.json"
     if not path.exists():
