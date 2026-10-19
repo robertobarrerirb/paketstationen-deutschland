@@ -1,0 +1,23 @@
+📮 116107 punti con indirizzo e civico
+   … 2000000 indirizzi OSM letti, 34739 punti trovati
+   … 4000000 indirizzi OSM letti, 56832 punti trovati
+   … 6000000 indirizzi OSM letti, 70720 punti trovati
+   … 8000000 indirizzi OSM letti, 78987 punti trovati
+   … 10000000 indirizzi OSM letti, 86106 punti trovati
+   … 12000000 indirizzi OSM letti, 91719 punti trovati
+   … 14000000 indirizzi OSM letti, 96804 punti trovati
+   … 16000000 indirizzi OSM letti, 101063 punti trovati
+   … 18000000 indirizzi OSM letti, 104785 punti trovati
+   … 20000000 indirizzi OSM letti, 107915 punti trovati
+✅ 109468 punti su 116107 posizionati dall'indirizzo (20776148 indirizzi OSM, 8 min)
+   DHL            {'con_indirizzo': 40564, 'trovati': 38513, 'spostati_oltre_10m': 23241, 'spostati_oltre_100m': 936}
+   Hermes         {'con_indirizzo': 17353, 'trovati': 16512, 'spostati_oltre_10m': 5910, 'spostati_oltre_100m': 513}
+   DPD            {'con_indirizzo': 11466, 'trovati': 10850, 'spostati_oltre_10m': 4761, 'spostati_oltre_100m': 474}
+   GLS            {'con_indirizzo': 11895, 'trovati': 11264, 'spostati_oltre_10m': 4097, 'spostati_oltre_100m': 325}
+   UPS            {'con_indirizzo': 6862, 'trovati': 6521, 'spostati_oltre_10m': 4038, 'spostati_oltre_100m': 272}
+   Amazon         {'con_indirizzo': 11247, 'trovati': 9975, 'spostati_oltre_10m': 3998, 'spostati_oltre_100m': 386}
+   FedEx          {'con_indirizzo': 1366, 'trovati': 1311, 'spostati_oltre_10m': 912, 'spostati_oltre_100m': 35}
+   myflexbox      {'con_indirizzo': 2036, 'trovati': 1927, 'spostati_oltre_10m': 1510, 'spostati_oltre_100m': 48}
+   DeinFach       {'con_indirizzo': 1717, 'trovati': 1619, 'spostati_oltre_10m': 1445, 'spostati_oltre_100m': 74}
+   MBE            {'con_indirizzo': 142, 'trovati': 134, 'spostati_oltre_10m': 44, 'spostati_oltre_100m': 8}
+   NovaPost       {'con_indirizzo': 11459, 'trovati': 10842, 'spostati_oltre_10m': 4777, 'spostati_oltre_100m': 477}
