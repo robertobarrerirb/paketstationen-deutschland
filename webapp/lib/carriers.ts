@@ -120,7 +120,7 @@ export const CARRIER_SOURCE: Record<Carrier, 'api' | 'osm' | 'pc'> = {
   FedEx: 'api',
   myflexbox: 'api',
   DeinFach: 'api',
-  MBE: 'osm',
+  MBE: 'api',
   NovaPost: 'api',
 };
 

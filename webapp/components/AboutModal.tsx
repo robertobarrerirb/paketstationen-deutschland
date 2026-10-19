@@ -20,7 +20,7 @@ const SOURCES: Record<Carrier, { endpoint: string; url: string }> = {
   FedEx: { endpoint: 'local.fedex.com/en/search', url: 'https://www.fedex.com/de-de' },
   myflexbox: { endpoint: 'api.myflexbox.de/api/1/lockers', url: 'https://www.myflexbox.com' },
   DeinFach: { endpoint: 'standortfinder.deinfach.de/location-finder-widget.es.js (Standortfinder)', url: 'https://www.deinfach.de' },
-  MBE: { endpoint: 'OpenStreetMap (Overpass API)', url: 'https://www.mbe.de' },
+  MBE: { endpoint: 'www.mbe.de/WS/wsStores.asmx/FindNear (Store-Locator)', url: 'https://www.mbe.de/de/store-locator' },
   NovaPost: { endpoint: 'api.novapost.com/site/v.1.0/divisions?countryCodes[]=DE', url: 'https://novapost.com/de-de/' },
 };
 

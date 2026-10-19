@@ -23,7 +23,7 @@ The code keeps the French version's names: a Gemeinde is a `commune`, a Kreis a 
 ```bash
 pip install -r requirements.txt
 python scripts/prepare_territorium.py  # BKG VG250-EW boundaries + population (run first)
-python scripts/fetch_dpd.py            # also: fetch_dhl (DHL_API_KEY optional), fetch_gls,
+python scripts/fetch_dpd.py            # also: fetch_dhl (DHL_API_KEY optional), fetch_gls, fetch_mbe,
                                        # fetch_fedex, fetch_osm (fallback for every network);
                                        # from the PC: fetch_amazon, fetch_ups_pc
 python scripts/fetch_zensus.py         # census 2022 100 m grid (data/popolazione_zensus_100m.csv.gz)
@@ -61,8 +61,9 @@ cd webapp && npm install && npm run dev   # port 3002 (Italy 3000, France 3001)
   GeoJSON Features with coordinates as [lat, lon]). NovaPost from
   `api.novapost.com/site/v.1.0/divisions?countryCodes[]=DE` (100 per page): ~40 own branches and
   ~11,500 PUDO points that are DPD Pickup shops, named "Nova Post PUDO" so they join the DPD shop
-  by address. MBE comes from OpenStreetMap until a
-  direct source is found with `scripts/scopri.py` (records a locator's network calls from a
+  by address. MBE from the store locator's search (`www.mbe.de/WS/wsStores.asmx/FindNear`, body
+  `{coords: {lat, lng}, servizi: []}`: `d.Props.DataForMap` holds every German center whatever the
+  coordinates; hours from each center's page). New sources are found with `scripts/scopri.py` (records a locator's network calls from a
   visible browser on the user's PC). `fetch_osm.py` assigns an OSM element to every network named
   in brand / operator / post_office:brand and never overwrites a cache whose `metadata.method` is
   not `osm-overpass`. LPR Logistik and Parcelly were asked for and set aside (no public map of German points; Parcelly now sells PUDO software). Keep `CARRIERS` in
