@@ -47,7 +47,7 @@ from shapely import make_valid
 from shapely.geometry import mapping
 from shapely.ops import unary_union
 
-from shared_points import load_corrections, shared_groups
+from shared_points import AMAZON_3P_NAME, AMAZON_3P_NETWORKS, SAME_SPOT_M, load_corrections, shared_groups
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
@@ -161,10 +161,33 @@ def address_positions(points: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
     found = keys.map(positions)
     hit = found.notna()
     points = points.copy()
+    # amazon.de offers other networks' points under their label ("DHL Packstation 107"), at
+    # the very coordinates of that network's listing and with no address of their own: they
+    # follow that listing, at the same coordinates, or the nearest one within SAME_SPOT_M
+    third = points["locatieNaam"].fillna("").astype(str).map(
+        lambda name: (lambda m: AMAZON_3P_NETWORKS.get(m.group(1).lower()) if m else None)(AMAZON_3P_NAME.match(name)))
+    third = third.where(points["vervoerder"] == "Amazon") if len(points) else third
+    followers = third.notna() & ~hit
+    followed = 0
+    if followers.any():
+        metric = points.to_crs(METRIC_CRS).geometry
+        for network in third[followers].unique():
+            owners = points.index[(points["vervoerder"] == network) & hit]
+            mine = points.index[followers & (third == network)]
+            if not len(owners) or not len(mine):
+                continue
+            tree = shapely.STRtree(metric.loc[owners].values)
+            near, dist = tree.query_nearest(metric.loc[mine].values, max_distance=SAME_SPOT_M,
+                                            return_distance=True, all_matches=False)
+            src, dst = mine[near[0]], owners[near[1]]
+            found.loc[src] = found.loc[dst].values
+            followed += len(src)
+        hit = found.notna()
     points.loc[hit, "latitude"] = [v[0] for v in found[hit]]
     points.loc[hit, "longitude"] = [v[1] for v in found[hit]]
     points["geometry"] = gpd.points_from_xy(points["longitude"], points["latitude"])
-    print(f"   🏠 {int(hit.sum())} punti posizionati dal loro indirizzo")
+    print(f"   🏠 {int(hit.sum())} punti posizionati dal loro indirizzo "
+          f"({followed} di altre reti su amazon.de spostati col punto della rete)")
     return points
 
 

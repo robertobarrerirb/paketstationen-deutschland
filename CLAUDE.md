@@ -88,7 +88,8 @@ cd webapp && npm install && npm run dev   # port 3002 (Italy 3000, France 3001)
   and a house number (not a network label such as amazon.de's "DHL Packstation 107") is moved to the
   same number in OpenStreetMap, same Gemeinde (under the coordinates or by town name), within 3 km
   (`scripts/osm_indirizzi.py` → `data/posizioni_indirizzi.json`, workflow "Posizioni dagli
-  indirizzi (OSM)", monthly on day 3; applied by `address_positions()`). Official house
+  indirizzi (OSM)", monthly on day 3; applied by `address_positions()`). amazon.de's listings of other
+  networks (no address, same coordinates as that network's listing) follow that listing's move. Official house
   coordinates (BKG HK-DE) are not open nationwide, only in some Länder.
 - **puntType**: `locker` | `pickup_point` | `post_office`; only `locker` is a locker.
 - **Opening hours**: `{mon, tue, wed, thu, fri, sat, sun}` with `"HH:MM - HH:MM[, ...]"` or `"closed"`.
